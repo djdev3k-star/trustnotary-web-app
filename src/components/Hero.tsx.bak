@@ -1,0 +1,85 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+
+const Hero = () => {
+  return (
+    <section className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
+      {/* Background overlay */}
+      <div className="absolute inset-0 bg-black/40" />
+      
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1600')`
+        }}
+      />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
+          {/* Left Content */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="space-y-8"
+          >
+            <div>
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-6"
+              >
+                When Accuracy Matters,{' '}
+                <span className="block font-normal">
+                  So Does Who You Send
+                </span>
+              </motion.h1>
+
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl"
+              >
+                We value your time, uphold the integrity of your documents, 
+                and always prioritize your needs. Trust us to deliver when 
+                your documents need it most.
+              </motion.p>
+            </div>
+
+            <motion.button
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              CLOSE WITH CONFIDENCE
+            </motion.button>
+          </motion.div>
+
+          {/* Right Content - Document Image */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="relative"
+          >
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-8 shadow-2xl">
+              <img
+                src="https://images.pexels.com/photos/4427430/pexels-photo-4427430.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Professional document signing"
+                className="w-full h-80 object-cover rounded-2xl"
+              />
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

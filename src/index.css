@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* General Body Styling */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #111;
+  color: #fff;
+  position: relative;
+}
+
+header .logo-container {
+  max-width: 150px;
+}
+
+header .logo {
+  width: 100%;
+}
+
+header .header-text {
+  text-align: right;
+  max-width: 500px;
+  z-index: 1;
+}
+
+header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+header button {
+  background-color: #f1c40f;
+  color: #111;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+header button:hover {
+  background-color: #e0b90f;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-image: url('path-to-your-hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.hero h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 15px 30px;
+  background-color: #f1c40f;
+  color: #111;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #e0b90f;
+}
+
+/* Client Feedback Section */
+.feedback {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.feedback h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  font-style: italic;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+/* Mortgage and Loan Fees Section */
+.fees {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.fees h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.fees ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.fees li {
+  margin: 10px 0;
+}
+
+/* Schedule Section */
+.schedule {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.schedule h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.schedule form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.schedule label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+.schedule input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.schedule button {
+  padding: 15px 30px;
+  background-color: #f1c40f;
+  color: #111;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.schedule button:hover {
+  background-color: #e0b90f;
+}
+
+/* Footer Section */
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer a {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .testimonial {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .fees ul {
+    padding-left: 0;
+  }
+}
