@@ -49,7 +49,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section className="py-20 bg-[#cdad7d]">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -57,13 +57,13 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-6">
-            Mortgage and{' '}
-            <span className="text-blue-600 font-semibold">Loan Fees</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#142631] mb-6">
+            Reliable Signings Every Time
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Transparent pricing for all your notary needs. No hidden fees, no surprises - 
-            just professional service at fair rates.
+          <p className="text-xl text-[#142631]/80 max-w-3xl mx-auto leading-relaxed">
+            We offer flexible signing arrangements including refinance, buyer/seller documents,
+            HELOC, reverse mortgages, and more. Our commitment is to make your closing process
+            smooth and worry-free.
           </p>
         </motion.div>
 
@@ -75,25 +75,25 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100"
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#142631]/10"
             >
               {/* Service Icon */}
               <motion.div
                 whileHover={{ scale: 1.1, rotate: 5 }}
-                className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg"
+                className="w-16 h-16 bg-[#142631] rounded-xl flex items-center justify-center mb-6 shadow-lg"
               >
-                <service.icon className="text-white" size={28} />
+                <service.icon className="text-[#cdad7d]" size={28} />
               </motion.div>
 
               {/* Service Details */}
               <div className="mb-6">
-                <h3 className="text-2xl font-semibold text-slate-900 mb-2">
+                <h3 className="text-2xl font-semibold text-[#142631] mb-2">
                   {service.title}
                 </h3>
-                <div className="text-3xl font-bold text-blue-600 mb-3">
+                <div className="text-3xl font-bold text-[#142631] mb-3">
                   {service.price}
                 </div>
-                <p className="text-slate-600 leading-relaxed">
+                <p className="text-[#142631]/70 leading-relaxed">
                   {service.description}
                 </p>
               </div>
@@ -102,8 +102,8 @@ const Services = () => {
               <div className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full" />
-                    <span className="text-slate-700 text-sm">{feature}</span>
+                    <div className="w-2 h-2 bg-[#cdad7d] rounded-full" />
+                    <span className="text-[#142631]/80 text-sm">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -112,7 +112,7 @@ const Services = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full mt-6 bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-900 py-3 rounded-xl font-semibold transition-all duration-300"
+                className="w-full mt-6 bg-[#142631] hover:bg-[#1a3340] text-white py-3 rounded-lg font-semibold transition-all duration-300"
               >
                 Book This Service
               </motion.button>
@@ -127,22 +127,23 @@ const Services = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-16"
         >
-          <div className="bg-white rounded-3xl p-8 shadow-lg max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold text-slate-900 mb-4">
-              Why Our Pricing is Different
+          <div className="bg-[#142631] rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
+            <h3 className="text-2xl font-semibold text-white mb-4">
+              Texas Notary Fee Schedule
             </h3>
+            <p className="text-[#cdad7d] mb-6">Per Government Code § 406.024</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div>
-                <h4 className="font-semibold text-slate-900 mb-2">Transparent</h4>
-                <p className="text-slate-600 text-sm">No hidden fees or surprise charges. What you see is what you pay.</p>
+                <h4 className="font-semibold text-white mb-2">Transparent</h4>
+                <p className="text-gray-300 text-sm">No hidden fees or surprise charges. What you see is what you pay.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-slate-900 mb-2">Competitive</h4>
-                <p className="text-slate-600 text-sm">Fair market rates that provide excellent value for professional service.</p>
+                <h4 className="font-semibold text-white mb-2">Professional</h4>
+                <p className="text-gray-300 text-sm">State-certified notary with years of experience in real estate closings.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-slate-900 mb-2">Inclusive</h4>
-                <p className="text-slate-600 text-sm">Travel within 25 miles included. Extended travel available for additional fee.</p>
+                <h4 className="font-semibold text-white mb-2">Convenient</h4>
+                <p className="text-gray-300 text-sm">Mobile service available. We come to you at your convenience.</p>
               </div>
             </div>
           </div>

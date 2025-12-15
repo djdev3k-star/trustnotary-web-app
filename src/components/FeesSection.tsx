@@ -13,10 +13,10 @@ const services = [
 
 const FeesSection = () => {
   return (
-    <section className="py-32 bg-gradient-to-br from-gray-50 to-gray-100">
+    <section className="py-32 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* Left - Headphones Icon and Title */}
+          {/* Left - Icon and Title */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -27,27 +27,27 @@ const FeesSection = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center justify-center w-24 h-24 bg-amber-600 rounded-full mb-8"
+              className="inline-flex items-center justify-center w-24 h-24 bg-[#142631] rounded-full mb-8"
             >
-              <Headphones className="text-white" size={40} />
+              <Headphones className="text-[#cdad7d]" size={40} />
             </motion.div>
 
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-4xl md:text-5xl font-light text-gray-900 leading-tight mb-6"
+              className="text-4xl md:text-5xl font-bold text-[#142631] leading-tight mb-6"
             >
-              Mortgage and Loans Fees
+              Mortgage and Loan Fees
             </motion.h2>
 
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-xl text-gray-600 leading-relaxed"
+              className="text-xl text-[#142631]/80 leading-relaxed"
             >
-              Our transparent pricing structure is built for speed, accuracy, and value.
+              Transparent pricing built for speed, accuracy, and value. All fees comply with Texas Government Code § 406.024.
             </motion.p>
           </motion.div>
 
@@ -64,15 +64,15 @@ const FeesSection = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="flex items-center justify-between p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
+                className="flex items-center justify-between p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#cdad7d]/20 hover:border-[#cdad7d]/40"
               >
                 <div className="flex items-center space-x-4">
-                  <div className="w-3 h-3 bg-amber-600 rounded-full" />
-                  <span className="text-lg font-medium text-gray-900">
+                  <div className="w-3 h-3 bg-[#cdad7d] rounded-full" />
+                  <span className="text-lg font-medium text-[#142631]">
                     {service.name}
                   </span>
                 </div>
-                <span className="text-xl font-bold text-amber-600">
+                <span className="text-xl font-bold text-[#142631]">
                   {service.price}
                 </span>
               </motion.div>
@@ -84,9 +84,9 @@ const FeesSection = () => {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="text-center pt-8"
             >
-              <button className="text-amber-600 hover:text-amber-700 font-semibold text-lg underline transition-colors">
-                Download Full Price Sheet
-              </button>
+              <p className="text-[#142631]/70 text-sm mb-4">
+                Additional travel fees may apply for locations outside standard service area.
+              </p>
             </motion.div>
           </motion.div>
         </div>

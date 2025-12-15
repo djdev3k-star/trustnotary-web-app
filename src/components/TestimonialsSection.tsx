@@ -25,14 +25,14 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-32 bg-gradient-to-br from-gray-800 to-gray-900 text-white relative overflow-hidden">
-      {/* Background overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
-        style={{
-          backgroundImage: `url('https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1600')`
-        }}
-      />
+    <section className="py-32 bg-[#142631] text-white relative overflow-hidden">
+      {/* Decorative background pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+          backgroundSize: '40px 40px'
+        }} />
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <motion.div
@@ -41,14 +41,15 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-light leading-tight mb-6">
-            Feedback from Clients
+          <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+            Client <span className="text-[#cdad7d]">Testimonials</span>
           </h2>
           <div className="flex items-center justify-center space-x-1 mb-4">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} size={24} className="text-amber-400 fill-current" />
+              <Star key={i} size={28} className="text-[#cdad7d] fill-current" />
             ))}
           </div>
+          <p className="text-xl text-gray-300">Rated 5-Stars on Google</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -58,12 +59,12 @@ const TestimonialsSection = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-8 hover:bg-white/15 transition-all duration-300"
+              className="bg-[#cdad7d]/5 backdrop-blur-sm border-2 border-[#cdad7d]/20 rounded-2xl p-8 hover:bg-[#cdad7d]/10 hover:border-[#cdad7d]/40 transition-all duration-300"
             >
               {/* Rating */}
               <div className="flex items-center space-x-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} size={16} className="text-amber-400 fill-current" />
+                  <Star key={i} size={18} className="text-[#cdad7d] fill-current" />
                 ))}
               </div>
 
@@ -72,12 +73,12 @@ const TestimonialsSection = () => {
                 "{testimonial.text}"
               </p>
 
-              {/* Author */}
-              <div className="border-t border-white/20 pt-4">
+              {/* Divider */}
+              <div className="border-t-2 border-[#cdad7d]/30 pt-4">
                 <div className="font-semibold text-white text-lg">
                   {testimonial.author}
                 </div>
-                <div className="text-gray-400">
+                <div className="text-[#cdad7d]">
                   {testimonial.role}
                 </div>
               </div>

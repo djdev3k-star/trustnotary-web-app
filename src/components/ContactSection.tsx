@@ -40,21 +40,21 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Contact Information:</h4>
                     <div className="space-y-2 text-gray-600">
-                      <p>📞 Phone: (555) 123-4567</p>
-                      <p>📧 Email: wanda@trustnotary.com</p>
-                      <p>🌐 Website: www.trustnotary.com</p>
+                      <p>📞 Phone: (214) 685-4750</p>
+                      <p>📧 Email: info@trust-notary.com</p>
+                      <p>🌐 Website: trust-notary.com</p>
                     </div>
                   </div>
 
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Service Areas:</h4>
                     <div className="grid grid-cols-2 gap-2 text-gray-600 text-sm">
-                      <p>• Downtown Metro</p>
-                      <p>• North County</p>
-                      <p>• East Valley</p>
-                      <p>• West Hills</p>
-                      <p>• South Bay</p>
-                      <p>• Suburban Areas</p>
+                      <p>• Dallas Metro</p>
+                      <p>• Fort Worth</p>
+                      <p>• North Texas</p>
+                      <p>• Surrounding Areas</p>
+                      <p>• Mobile Service Available</p>
+                      <p>• Remote Notarization</p>
                     </div>
                   </div>
 

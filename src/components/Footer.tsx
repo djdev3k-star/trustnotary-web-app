@@ -1,70 +1,99 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-16">
+    <footer className="bg-[#142631] text-white py-16 border-t-2 border-[#cdad7d]/20">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          {/* Logo and Contact */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="mb-8"
           >
-            <div className="flex items-center justify-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">TN</span>
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-12 h-12 bg-[#cdad7d] rounded-full flex items-center justify-center">
+                <span className="text-[#142631] font-bold text-xl">TN</span>
               </div>
               <div>
                 <div className="text-2xl font-bold">Trust</div>
-                <div className="text-lg text-gray-400 -mt-1">NOTARY</div>
+                <div className="text-lg text-[#cdad7d] -mt-1">NOTARY</div>
               </div>
             </div>
+            <p className="text-gray-300 mb-4">
+              Professional Signing Services
+            </p>
+            <p className="text-[#cdad7d] font-semibold">
+              Wanda Jones, Notary Public
+            </p>
           </motion.div>
 
+          {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-4 mb-8"
           >
-            <p className="text-gray-400">
-              © 2025 Trust Notary | All Rights Reserved
-            </p>
-            <div className="flex items-center justify-center space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Privacy Policy
+            <h3 className="text-xl font-semibold mb-4 text-[#cdad7d]">Contact Us</h3>
+            <div className="space-y-3">
+              <a href="tel:2146854750" className="flex items-center space-x-3 text-gray-300 hover:text-[#cdad7d] transition-colors">
+                <Phone className="w-5 h-5" />
+                <span>(214) 685-4750</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Terms of Service
+              <a href="mailto:info@trust-notary.com" className="flex items-center space-x-3 text-gray-300 hover:text-[#cdad7d] transition-colors">
+                <Mail className="w-5 h-5" />
+                <span>info@trust-notary.com</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Contact
-              </a>
+              <div className="flex items-center space-x-3 text-gray-300">
+                <MapPin className="w-5 h-5" />
+                <span>Serving Texas</span>
+              </div>
             </div>
           </motion.div>
 
+          {/* Quick Links */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex items-center justify-center space-x-4"
           >
-            <span className="text-gray-400">Follow us:</span>
-            <div className="flex items-center space-x-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
-                <span className="text-white text-xs">f</span>
-              </div>
-              <div className="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors cursor-pointer">
-                <span className="text-white text-xs">📷</span>
-              </div>
-              <div className="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors cursor-pointer">
-                <span className="text-white text-xs">in</span>
-              </div>
-            </div>
+            <h3 className="text-xl font-semibold mb-4 text-[#cdad7d]">Services</h3>
+            <ul className="space-y-2 text-gray-300">
+              <li className="hover:text-[#cdad7d] transition-colors cursor-pointer">Refinance Documents</li>
+              <li className="hover:text-[#cdad7d] transition-colors cursor-pointer">Buyer/Seller Documents</li>
+              <li className="hover:text-[#cdad7d] transition-colors cursor-pointer">Reverse Mortgage</li>
+              <li className="hover:text-[#cdad7d] transition-colors cursor-pointer">Commercial Real Estate</li>
+              <li className="hover:text-[#cdad7d] transition-colors cursor-pointer">Apostille Services</li>
+            </ul>
           </motion.div>
         </div>
+
+        {/* Bottom Bar */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="border-t border-[#cdad7d]/20 pt-8 text-center"
+        >
+          <p className="text-gray-400 mb-4">
+            © 2025 Trust Notary | All Rights Reserved | Wanda Jones, Texas Notary Public
+          </p>
+          <div className="flex items-center justify-center space-x-6 text-sm">
+            <a href="#" className="text-gray-400 hover:text-[#cdad7d] transition-colors">
+              Privacy Policy
+            </a>
+            <span className="text-gray-600">|</span>
+            <a href="#" className="text-gray-400 hover:text-[#cdad7d] transition-colors">
+              Terms of Service
+            </a>
+            <span className="text-gray-600">|</span>
+            <a href="#" className="text-gray-400 hover:text-[#cdad7d] transition-colors">
+              Contact
+            </a>
+          </div>
+        </motion.div>
       </div>
     </footer>
   );

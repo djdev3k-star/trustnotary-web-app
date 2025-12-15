@@ -2,26 +2,22 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
-import ReliableSection from './components/ReliableSection';
+import Services from './components/Services';
 import TestimonialsSection from './components/TestimonialsSection';
-import LoanClosingsSection from './components/LoanClosingsSection';
 import FeesSection from './components/FeesSection';
-import MobileNotarySection from './components/MobileNotarySection';
 import ScheduleSection from './components/ScheduleSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
       <AboutSection />
-      <ReliableSection />
+      <Services />
       <TestimonialsSection />
-      <LoanClosingsSection />
       <FeesSection />
-      <MobileNotarySection />
       <ScheduleSection />
       <ContactSection />
       <Footer />
