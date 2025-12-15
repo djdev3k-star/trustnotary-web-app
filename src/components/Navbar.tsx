@@ -62,10 +62,10 @@ const Navbar = () => {
             />
             <div className="flex flex-col">
               <div className="flex items-baseline space-x-2">
-                <span className="text-white text-4xl font-bold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                <span className="text-white text-5xl font-bold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   Trust
                 </span>
-                <span className="text-white text-xl font-normal tracking-widest uppercase" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                <span className="text-white text-2xl font-normal tracking-widest uppercase" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   NOTARY
                 </span>
               </div>
