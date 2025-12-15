@@ -1,27 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Clock, Shield, Users } from 'lucide-react';
 
 const backgroundImage = 'https://trust-notary.com/_assets/media/a0cbf6662ccef407221ab03afbc5fb03.jpg';
 
 const showcaseItems = [
   {
-    icon: Award,
     title: 'Professional Excellence',
     description: 'Expert document handling with meticulous attention to every detail'
   },
   {
-    icon: Clock,
     title: 'On-Time Service',
     description: 'We show up when we say we will, ready to get the job done right'
   },
   {
-    icon: Users,
     title: 'Client-Focused',
     description: 'Your convenience is our priority with flexible scheduling options'
   },
   {
-    icon: Shield,
     title: 'Trusted & Secure',
     description: 'Licensed, bonded, and insured for complete peace of mind'
   }
@@ -59,27 +54,18 @@ const VisualShowcase = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
               whileHover={{ scale: 1.03, y: -5 }}
-              className="flex items-start space-x-6 bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 group cursor-pointer"
+              className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 group cursor-pointer"
             >
-              <motion.div
-                whileHover={{ scale: 1.2, rotate: 10 }}
-                transition={{ type: "spring", stiffness: 300 }}
-                className="flex-shrink-0 bg-white/10 p-3 rounded-xl group-hover:bg-white/20 transition-all"
+              <motion.h3
+                className="text-3xl font-bold text-white mb-3 drop-shadow-lg"
+                style={{ fontFamily: 'Cormorant Garamond, serif' }}
+                whileHover={{ x: 5 }}
               >
-                <item.icon className="w-12 h-12 text-[#cdad7d] drop-shadow-lg" strokeWidth={1.5} />
-              </motion.div>
-              <div className="text-left">
-                <motion.h3
-                  className="text-3xl font-bold text-white mb-3 drop-shadow-lg"
-                  style={{ fontFamily: 'Cormorant Garamond, serif' }}
-                  whileHover={{ x: 5 }}
-                >
-                  {item.title}
-                </motion.h3>
-                <p className="text-xl text-white/90 leading-relaxed drop-shadow-md" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-                  {item.description}
-                </p>
-              </div>
+                {item.title}
+              </motion.h3>
+              <p className="text-xl text-white/90 leading-relaxed drop-shadow-md" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                {item.description}
+              </p>
             </motion.div>
           ))}
         </div>
