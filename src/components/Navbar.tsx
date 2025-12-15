@@ -27,7 +27,19 @@ const Navbar = () => {
                 e.currentTarget.style.display = 'none';
               }}
             />
-            <span className="text-white text-2xl font-bold">Trust Notary</span>
+            <div className="flex flex-col">
+              <div className="flex items-baseline space-x-2">
+                <span className="text-white text-3xl font-bold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                  Trust
+                </span>
+                <span className="text-white text-lg font-normal tracking-widest uppercase" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                  NOTARY
+                </span>
+              </div>
+              <span className="text-white text-sm" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                Wanda Jones, Notary Public
+              </span>
+            </div>
           </div>
 
           <div className="flex items-center space-x-12">
