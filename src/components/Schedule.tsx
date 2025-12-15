@@ -85,24 +85,31 @@ const Schedule = () => {
                     href={contact.href}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                    whileHover={{ x: 5 }}
-                    className="flex items-center space-x-4 p-4 bg-slate-50 rounded-2xl hover:bg-blue-50 transition-all duration-300 group"
+                    whileHover={{ x: 5, scale: 1.02 }}
+                    className="flex items-center space-x-4 p-4 bg-gradient-to-r from-slate-50 to-[#cdad7d]/5 rounded-2xl hover:shadow-lg transition-all duration-300 group border border-slate-100"
                   >
-                    <div className="w-12 h-12 bg-blue-100 group-hover:bg-blue-200 rounded-xl flex items-center justify-center transition-colors">
-                      <contact.icon className="text-blue-600" size={20} />
-                    </div>
+                    <motion.div
+                      className="w-12 h-12 bg-[#cdad7d]/20 group-hover:bg-[#cdad7d]/30 rounded-xl flex items-center justify-center transition-colors"
+                      whileHover={{ rotate: 5, scale: 1.1 }}
+                    >
+                      <contact.icon className="text-[#142631]" size={20} />
+                    </motion.div>
                     <div>
-                      <div className="text-slate-600 text-sm">{contact.label}</div>
-                      <div className="text-slate-900 font-semibold">{contact.value}</div>
+                      <div className="text-[#142631]/60 text-sm">{contact.label}</div>
+                      <div className="text-[#142631] font-semibold">{contact.value}</div>
                     </div>
                   </motion.a>
                 ))}
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-3xl p-8">
-              <h4 className="text-xl font-semibold text-slate-900 mb-4">
+            <motion.div
+              className="bg-gradient-to-br from-[#cdad7d]/10 to-slate-50 rounded-3xl p-8 border border-[#cdad7d]/20 shadow-md"
+              whileHover={{ scale: 1.02 }}
+            >
+              <h4 className="text-xl font-semibold text-[#142631] mb-4" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                 Business Hours
               </h4>
               <div className="space-y-2">
@@ -111,13 +118,21 @@ const Schedule = () => {
                   { day: 'Saturday', hours: '9:00 AM - 4:00 PM' },
                   { day: 'Sunday', hours: 'By Appointment' }
                 ].map((schedule, index) => (
-                  <div key={index} className="flex justify-between">
-                    <span className="text-slate-600">{schedule.day}</span>
-                    <span className="text-slate-900 font-semibold">{schedule.hours}</span>
-                  </div>
+                  <motion.div
+                    key={index}
+                    className="flex justify-between py-2 border-b border-[#cdad7d]/10 last:border-0"
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    whileHover={{ x: 5 }}
+                  >
+                    <span className="text-[#142631]/70" style={{ fontFamily: 'Cormorant Garamond, serif' }}>{schedule.day}</span>
+                    <span className="text-[#142631] font-semibold" style={{ fontFamily: 'EB Garamond, serif' }}>{schedule.hours}</span>
+                  </motion.div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </motion.div>
 
           {/* Booking Form */}
@@ -265,13 +280,20 @@ const Schedule = () => {
 
               <motion.button
                 type="submit"
-                whileHover={{ scale: 1.02 }}
+                whileHover={{ scale: 1.02, boxShadow: '0 10px 30px rgba(20, 38, 49, 0.3)' }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-xl text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+                className="w-full bg-[#142631] hover:bg-[#1a3340] text-white py-4 rounded-xl text-lg font-semibold transition-all duration-300 shadow-lg flex items-center justify-center space-x-2 border-2 border-[#cdad7d]"
+                style={{ fontFamily: 'Cormorant Garamond, serif' }}
               >
                 {isSubmitted ? (
                   <>
-                    <CheckCircle size={20} />
+                    <motion.div
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{ type: 'spring', stiffness: 300 }}
+                    >
+                      <CheckCircle size={20} />
+                    </motion.div>
                     <span>Appointment Requested!</span>
                   </>
                 ) : (

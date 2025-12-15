@@ -56,21 +56,27 @@ const VisualShowcase = () => {
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
-              className="flex items-start space-x-6"
+              whileHover={{ scale: 1.03, y: -5 }}
+              className="flex items-start space-x-6 bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 group cursor-pointer"
             >
               <motion.div
-                whileHover={{ scale: 1.1, rotate: 5 }}
+                whileHover={{ scale: 1.2, rotate: 10 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                className="flex-shrink-0"
+                className="flex-shrink-0 bg-white/10 p-3 rounded-xl group-hover:bg-white/20 transition-all"
               >
-                <item.icon className="w-16 h-16 text-[#cdad7d] drop-shadow-lg" strokeWidth={1.5} />
+                <item.icon className="w-12 h-12 text-[#cdad7d] drop-shadow-lg" strokeWidth={1.5} />
               </motion.div>
               <div className="text-left">
-                <h3 className="text-3xl font-bold text-white mb-3 drop-shadow-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                <motion.h3
+                  className="text-3xl font-bold text-white mb-3 drop-shadow-lg"
+                  style={{ fontFamily: 'Cormorant Garamond, serif' }}
+                  whileHover={{ x: 5 }}
+                >
                   {item.title}
-                </h3>
-                <p className="text-xl text-white leading-relaxed drop-shadow-md" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                </motion.h3>
+                <p className="text-xl text-white/90 leading-relaxed drop-shadow-md" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   {item.description}
                 </p>
               </div>

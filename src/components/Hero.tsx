@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { Star, Shield } from 'lucide-react';
 import googleIcon from '../assets/google_g_icon_download.png';
 
@@ -7,6 +7,10 @@ const heroVideo = 'https://trust-notary.com/_assets/video/10a39bf285bb22e99497f5
 const heroPosterImage = 'https://trust-notary.com/_assets/media/04635ee3f7d37abf84d4fb40b9f6f952.jpg';
 
 const Hero = () => {
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [0, 500], [0, 150]);
+  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+
   return (
     <section className="relative min-h-screen bg-[#142631] text-white overflow-hidden">
       {/* Background Video */}
@@ -27,7 +31,10 @@ const Hero = () => {
         <div className="absolute inset-0 bg-[#142631]/40" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 min-h-screen flex items-center">
+      <motion.div
+        style={{ y, opacity }}
+        className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 min-h-screen flex items-center"
+      >
         <div className="w-full">
           {/* Top Right Badges */}
           <motion.div
@@ -36,21 +43,34 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="absolute top-32 right-6 flex flex-col gap-4"
           >
-            <div className="flex items-center justify-center space-x-2 px-4 py-2">
+            <motion.div
+              className="flex items-center justify-center space-x-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-lg"
+              whileHover={{ scale: 1.05, backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
+            >
               <img src={googleIcon} alt="Google" className="w-5 h-5" />
               <div className="flex flex-col">
                 <span className="text-xs text-white font-bold drop-shadow-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Rated <span style={{ fontFamily: 'EB Garamond, serif' }}>5</span>-Stars on Google</span>
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 text-[#cdad7d] fill-current" />
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, scale: 0 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.5 + i * 0.1 }}
+                    >
+                      <Star className="w-3 h-3 text-[#cdad7d] fill-current" />
+                    </motion.div>
                   ))}
                 </div>
               </div>
-            </div>
-            <div className="flex items-center justify-center space-x-2 px-4 py-3">
+            </motion.div>
+            <motion.div
+              className="flex items-center justify-center space-x-2 px-4 py-3 bg-white/5 backdrop-blur-sm rounded-lg"
+              whileHover={{ scale: 1.05, backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
+            >
               <Shield className="w-6 h-6 text-[#cdad7d]" />
               <span className="text-sm text-white font-bold drop-shadow-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Trusted, Certified<br/>& Insured</span>
-            </div>
+            </motion.div>
           </motion.div>
 
           {/* Main Content */}
@@ -62,21 +82,68 @@ const Hero = () => {
           >
             <div>
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-                <span className="text-white">When Accuracy Matters,</span>
+                <motion.span
+                  className="text-white inline-block"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.3 }}
+                >
+                  When Accuracy Matters,
+                </motion.span>
                 <br />
-                <span className="text-white">So Does Who You Send</span>
+                <motion.span
+                  className="text-white inline-block"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.5 }}
+                >
+                  So Does Who You Send
+                </motion.span>
               </h1>
-              <p className="text-xl lg:text-2xl text-gray-200 max-w-3xl leading-relaxed" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.7 }}
+                className="text-xl lg:text-2xl text-gray-200 max-w-3xl leading-relaxed"
+                style={{ fontFamily: 'Cormorant Garamond, serif' }}
+              >
                 We show up on time, triple-check every document, and deliver professional, mobile signings—when and where your clients need them.
-              </p>
+              </motion.p>
             </div>
 
-            <button className="bg-black border border-[#cdad7d] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-900 transition-all transform hover:scale-105 shadow-2xl uppercase tracking-wider" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-              Close with Confidence
-            </button>
+            <motion.button
+              className="relative bg-black border-2 border-[#cdad7d] text-white px-10 py-4 rounded-lg font-bold text-lg shadow-2xl uppercase tracking-wider overflow-hidden group"
+              style={{ fontFamily: 'Cormorant Garamond, serif' }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.9 }}
+            >
+              <motion.span
+                className="absolute inset-0 bg-[#cdad7d] opacity-0 group-hover:opacity-20 transition-opacity"
+              />
+              <motion.span
+                className="relative z-10"
+                animate={{
+                  textShadow: [
+                    '0 0 0px rgba(205, 173, 125, 0)',
+                    '0 0 10px rgba(205, 173, 125, 0.5)',
+                    '0 0 0px rgba(205, 173, 125, 0)'
+                  ]
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: 'loop'
+                }}
+              >
+                Close with Confidence
+              </motion.span>
+            </motion.button>
           </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
