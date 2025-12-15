@@ -51,9 +51,9 @@ const SecuritySection = () => {
             >
               <motion.div
                 whileHover={{ scale: 1.1, rotate: 5 }}
-                className="inline-flex items-center justify-center w-20 h-20 bg-lime-400/10 border border-lime-400/30 rounded-2xl mb-6"
+                className="inline-flex items-center justify-center w-20 h-20 mb-6"
               >
-                <feature.icon className="text-lime-400" size={32} />
+                <feature.icon className="text-lime-400" size={48} />
               </motion.div>
               <h3 className="text-2xl font-semibold text-white mb-4">
                 {feature.title}

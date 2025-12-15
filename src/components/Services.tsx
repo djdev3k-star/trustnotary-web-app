@@ -85,9 +85,9 @@ const Services = () => {
               {/* Service Icon */}
               <motion.div
                 whileHover={{ scale: 1.1, rotate: 5 }}
-                className="w-16 h-16 bg-[#142631] rounded-xl flex items-center justify-center mb-6 shadow-lg"
+                className="w-16 h-16 flex items-center justify-center mb-6"
               >
-                <service.icon className="text-[#cdad7d]" size={28} />
+                <service.icon className="text-[#cdad7d]" size={48} />
               </motion.div>
 
               {/* Service Details */}

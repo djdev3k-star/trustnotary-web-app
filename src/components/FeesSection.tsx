@@ -29,9 +29,9 @@ const FeesSection = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center justify-center w-24 h-24 bg-[#142631] rounded-full mb-8"
+              className="inline-flex items-center justify-center w-24 h-24 mb-8"
             >
-              <Headphones className="text-[#cdad7d]" size={40} />
+              <Headphones className="text-[#cdad7d]" size={64} />
             </motion.div>
 
             <motion.h2
