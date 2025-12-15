@@ -33,15 +33,15 @@ const Hero = () => {
 
       <motion.div
         style={{ y, opacity }}
-        className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 min-h-screen flex items-center"
+        className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-24 sm:pt-32 pb-12 sm:pb-20 min-h-screen flex items-center"
       >
         <div className="w-full">
-          {/* Top Right Badges */}
+          {/* Top Right Badges - Hidden on mobile, shown on larger screens */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="absolute top-32 right-6 flex flex-col gap-4"
+            className="hidden lg:flex absolute top-32 right-6 flex-col gap-4"
           >
             <motion.div
               className="flex items-center justify-center space-x-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-lg"
@@ -78,10 +78,10 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-8 max-w-3xl"
+            className="space-y-6 sm:space-y-8 max-w-3xl"
           >
             <div>
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 sm:mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                 <motion.span
                   className="text-white inline-block"
                   initial={{ opacity: 0, x: -20 }}
@@ -104,15 +104,39 @@ const Hero = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.7 }}
-                className="text-xl lg:text-2xl text-gray-200 max-w-3xl leading-relaxed"
+                className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl leading-relaxed"
                 style={{ fontFamily: 'Cormorant Garamond, serif' }}
               >
                 We show up on time, triple-check every document, and deliver professional, mobile signings—when and where your clients need them.
               </motion.p>
             </div>
 
+            {/* Mobile Badges - Shown only on mobile */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="flex lg:hidden flex-wrap gap-3"
+            >
+              <div className="flex items-center space-x-2 px-3 py-2 bg-white/5 backdrop-blur-sm rounded-lg">
+                <img src={googleIcon} alt="Google" className="w-4 h-4" />
+                <div className="flex flex-col">
+                  <span className="text-xs text-white font-bold drop-shadow-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>5-Stars on Google</span>
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-2.5 h-2.5 text-[#cdad7d] fill-current" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center space-x-2 px-3 py-2 bg-white/5 backdrop-blur-sm rounded-lg">
+                <Shield className="w-4 h-4 text-[#cdad7d]" />
+                <span className="text-xs text-white font-bold drop-shadow-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Trusted & Insured</span>
+              </div>
+            </motion.div>
+
             <motion.button
-              className="relative bg-black border-2 border-[#cdad7d] text-white px-10 py-4 rounded-lg font-bold text-lg shadow-2xl uppercase tracking-wider overflow-hidden group"
+              className="relative bg-black border-2 border-[#cdad7d] text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg shadow-2xl uppercase tracking-wider overflow-hidden group"
               style={{ fontFamily: 'Cormorant Garamond, serif' }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
