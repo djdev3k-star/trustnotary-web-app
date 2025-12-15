@@ -67,15 +67,13 @@ const VisualShowcase = () => {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="flex-shrink-0"
               >
-                <div className="bg-white/95 backdrop-blur-sm p-5 rounded-2xl shadow-xl">
-                  <item.icon className="w-10 h-10 text-[#cdad7d]" strokeWidth={1.5} />
-                </div>
+                <item.icon className="w-16 h-16 text-[#cdad7d] drop-shadow-lg" strokeWidth={1.5} />
               </motion.div>
               <div className="text-left">
-                <h3 className="text-2xl font-bold text-white mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                <h3 className="text-3xl font-bold text-white mb-3 drop-shadow-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   {item.title}
                 </h3>
-                <p className="text-lg text-white/90 leading-relaxed" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                <p className="text-xl text-white leading-relaxed drop-shadow-md" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   {item.description}
                 </p>
               </div>
