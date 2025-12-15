@@ -49,7 +49,7 @@ const FeesSection = () => {
               className="text-xl text-[#142631]/80 leading-relaxed"
               style={{ fontFamily: 'Cormorant Garamond, serif' }}
             >
-              Transparent pricing built for speed, accuracy, and value. All fees comply with Texas Government Code § 406.024.
+              Transparent pricing built for speed, accuracy, and value. All fees comply with Texas Government Code § <span style={{ fontFamily: 'EB Garamond, serif' }}>406.024</span>.
             </motion.p>
           </motion.div>
 
@@ -74,7 +74,7 @@ const FeesSection = () => {
                     {service.name}
                   </span>
                 </div>
-                <span className="text-xl font-bold text-[#142631]" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                <span className="text-xl font-bold text-[#142631]" style={{ fontFamily: 'EB Garamond, serif' }}>
                   {service.price}
                 </span>
               </motion.div>

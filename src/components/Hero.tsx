@@ -38,7 +38,7 @@ const Hero = () => {
             <div className="flex items-center justify-center space-x-2 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
               <Star className="w-5 h-5 text-[#cdad7d] fill-current" />
               <div className="flex flex-col">
-                <span className="text-xs text-gray-800 font-bold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Rated 5-Stars on Google</span>
+                <span className="text-xs text-gray-800 font-bold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Rated <span style={{ fontFamily: 'EB Garamond, serif' }}>5</span>-Stars on Google</span>
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-3 h-3 text-[#cdad7d] fill-current" />

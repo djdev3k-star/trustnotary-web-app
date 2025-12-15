@@ -47,7 +47,7 @@ const Footer = () => {
             <div className="space-y-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               <a href="tel:2146854750" className="flex items-center space-x-3 text-gray-300 hover:text-[#cdad7d] transition-colors">
                 <Phone className="w-5 h-5" />
-                <span>(214) 685-4750</span>
+                <span style={{ fontFamily: 'EB Garamond, serif' }}>(214) 685-4750</span>
               </a>
               <a href="mailto:info@trust-notary.com" className="flex items-center space-x-3 text-gray-300 hover:text-[#cdad7d] transition-colors">
                 <Mail className="w-5 h-5" />
@@ -131,7 +131,7 @@ const Footer = () => {
           className="border-t border-[#cdad7d]/20 pt-8 text-center"
         >
           <p className="text-gray-300" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-            © 2025 Trust Notary | <span style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 700 }}>Wanda Jones</span>, Texas Notary Public
+            © <span style={{ fontFamily: 'EB Garamond, serif' }}>2025</span> Trust Notary | <span style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 700 }}>Wanda Jones</span>, Texas Notary Public
           </p>
         </motion.div>
       </div>

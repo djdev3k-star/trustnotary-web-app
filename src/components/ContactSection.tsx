@@ -132,7 +132,7 @@ const ContactSection = () => {
                 Contact Information
               </h3>
               <div className="space-y-2 text-gray-600" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-                <p><span className="font-semibold">Phone:</span> (214) 685-4750</p>
+                <p><span className="font-semibold">Phone:</span> <span style={{ fontFamily: 'EB Garamond, serif' }}>(214) 685-4750</span></p>
                 <p><span className="font-semibold">Email:</span> info@trust-notary.com</p>
                 <p><span className="font-semibold">Serving:</span> Dallas Metro & North Texas</p>
               </div>

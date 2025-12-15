@@ -93,20 +93,20 @@ const Testimonials = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-16"
         >
-          <div className="inline-flex items-center space-x-8 bg-slate-100 rounded-full px-8 py-4" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+          <div className="inline-flex items-center space-x-8 bg-slate-100 rounded-full px-8 py-4">
             <div className="text-center">
-              <div className="text-2xl font-bold text-slate-900">500+</div>
-              <div className="text-slate-600 text-sm">Happy Clients</div>
+              <div className="text-2xl font-bold text-slate-900" style={{ fontFamily: 'EB Garamond, serif' }}>500+</div>
+              <div className="text-slate-600 text-sm" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Happy Clients</div>
             </div>
             <div className="w-px h-8 bg-slate-300" />
             <div className="text-center">
-              <div className="text-2xl font-bold text-slate-900">5.0</div>
-              <div className="text-slate-600 text-sm">Average Rating</div>
+              <div className="text-2xl font-bold text-slate-900" style={{ fontFamily: 'EB Garamond, serif' }}>5.0</div>
+              <div className="text-slate-600 text-sm" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Average Rating</div>
             </div>
             <div className="w-px h-8 bg-slate-300" />
             <div className="text-center">
-              <div className="text-2xl font-bold text-slate-900">100%</div>
-              <div className="text-slate-600 text-sm">Satisfaction</div>
+              <div className="text-2xl font-bold text-slate-900" style={{ fontFamily: 'EB Garamond, serif' }}>100%</div>
+              <div className="text-slate-600 text-sm" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Satisfaction</div>
             </div>
           </div>
         </motion.div>

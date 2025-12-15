@@ -97,7 +97,7 @@ const Services = () => {
                 <h3 className="text-2xl font-semibold text-[#142631] mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   {service.title}
                 </h3>
-                <div className="text-3xl font-bold text-[#142631] mb-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                <div className="text-3xl font-bold text-[#142631] mb-3" style={{ fontFamily: 'EB Garamond, serif' }}>
                   {service.price}
                 </div>
                 <p className="text-[#142631]/70 leading-relaxed" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
@@ -139,7 +139,7 @@ const Services = () => {
             <h3 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               Texas Notary Fee Schedule
             </h3>
-            <p className="text-[#cdad7d] mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Per Government Code § 406.024</p>
+            <p className="text-[#cdad7d] mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Per Government Code § <span style={{ fontFamily: 'EB Garamond, serif' }}>406.024</span></p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div>
                 <h4 className="font-semibold text-white mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Transparent</h4>
