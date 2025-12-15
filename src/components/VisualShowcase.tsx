@@ -48,9 +48,6 @@ const VisualShowcase = () => {
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
             Reliable Signings Every Time
           </h2>
-          <p className="text-2xl text-white/90 max-w-3xl mx-auto" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-            We offer flexible signing arrangements including refinance, buyer/seller documents, HELOC, reverse mortgages, and more. Our commitment is to make your closing process smooth and worry-free.
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
