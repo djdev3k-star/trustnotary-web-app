@@ -29,33 +29,16 @@ const showcaseItems = [
 
 const VisualShowcase = () => {
   return (
-    <section className="relative py-32 overflow-hidden">
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div
-          className="bg-cover bg-center bg-no-repeat w-4/5 h-3/4"
-          style={{
-            backgroundImage: `url(${backgroundImage})`,
-            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
-          }}
-        />
-      </div>
-      <div className="absolute inset-0 bg-[#cdad7d]/40" />
+    <section className="relative min-h-screen overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        style={{
+          backgroundImage: `url(${backgroundImage})`
+        }}
+      />
+      <div className="absolute inset-0 bg-[#cdad7d]/50" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-20"
-        >
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-            Why Choose Trust Notary
-          </h2>
-          <p className="text-2xl text-white/90 max-w-3xl mx-auto" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-            Professional notary services delivered with excellence and integrity
-          </p>
-        </motion.div>
-
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {showcaseItems.map((item, index) => (
             <motion.div
