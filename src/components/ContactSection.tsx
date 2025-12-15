@@ -47,13 +47,14 @@ const ContactSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-xl text-gray-600 mb-8"
+              style={{ fontFamily: 'Cormorant Garamond, serif' }}
             >
               Ready to schedule your notary appointment? Contact us today.
             </motion.p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
+                <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   Full Name *
                 </label>
                 <input
@@ -69,7 +70,7 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2">
+                <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   Email Address *
                 </label>
                 <input
@@ -85,7 +86,7 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-semibold text-gray-900 mb-2">
+                <label htmlFor="phone" className="block text-sm font-semibold text-gray-900 mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   Phone Number *
                 </label>
                 <input
@@ -101,7 +102,7 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-gray-900 mb-2">
+                <label htmlFor="message" className="block text-sm font-semibold text-gray-900 mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   Message *
                 </label>
                 <textarea
@@ -119,6 +120,7 @@ const ContactSection = () => {
               <button
                 type="submit"
                 className="w-full bg-[#142631] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#1a3340] transition-all transform hover:scale-[1.02] shadow-lg flex items-center justify-center space-x-2"
+                style={{ fontFamily: 'Cormorant Garamond, serif' }}
               >
                 <span>Send Message</span>
                 <Send className="w-5 h-5" />
@@ -126,10 +128,10 @@ const ContactSection = () => {
             </form>
 
             <div className="mt-8 pt-8 border-t-2 border-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                 Contact Information
               </h3>
-              <div className="space-y-2 text-gray-600">
+              <div className="space-y-2 text-gray-600" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                 <p><span className="font-semibold">Phone:</span> (214) 685-4750</p>
                 <p><span className="font-semibold">Email:</span> info@trust-notary.com</p>
                 <p><span className="font-semibold">Serving:</span> Dallas Metro & North Texas</p>
@@ -158,10 +160,10 @@ const ContactSection = () => {
             <div className="text-gray-900 font-bold text-xl mb-2" style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 700 }}>
               Wanda Jones
             </div>
-            <div className="text-[#cdad7d] font-semibold text-lg mb-3">
+            <div className="text-[#cdad7d] font-semibold text-lg mb-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               Licensed Notary Public
             </div>
-            <div className="text-gray-600 text-sm">
+            <div className="text-gray-600 text-sm" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               Bonded & Insured Professional serving the Dallas-Fort Worth Metroplex
             </div>
           </div>

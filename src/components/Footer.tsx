@@ -29,10 +29,10 @@ const Footer = () => {
                 className="h-16 w-auto mb-4 transform scale-x-[-1]"
               />
             </div>
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300 mb-4" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               Professional Signing Services
             </p>
-            <p className="text-[#cdad7d] font-semibold">
+            <p className="text-[#cdad7d] font-semibold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               <span style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 700 }}>Wanda Jones</span>, Notary Public
             </p>
           </motion.div>
@@ -43,8 +43,8 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-xl font-semibold mb-4 text-[#cdad7d]">Contact Us</h3>
-            <div className="space-y-3">
+            <h3 className="text-xl font-semibold mb-4 text-[#cdad7d]" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Contact Us</h3>
+            <div className="space-y-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               <a href="tel:2146854750" className="flex items-center space-x-3 text-gray-300 hover:text-[#cdad7d] transition-colors">
                 <Phone className="w-5 h-5" />
                 <span>(214) 685-4750</span>
@@ -66,8 +66,8 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <h3 className="text-xl font-semibold mb-4 text-[#cdad7d]">Services</h3>
-            <ul className="space-y-2 text-gray-300">
+            <h3 className="text-xl font-semibold mb-4 text-[#cdad7d]" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Services</h3>
+            <ul className="space-y-2 text-gray-300" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               <li className="hover:text-[#cdad7d] transition-colors cursor-pointer">Refinance Documents</li>
               <li className="hover:text-[#cdad7d] transition-colors cursor-pointer">Buyer/Seller Documents</li>
               <li className="hover:text-[#cdad7d] transition-colors cursor-pointer">Reverse Mortgage</li>
@@ -104,7 +104,7 @@ const Footer = () => {
             >
               Find the Right Notary Solution
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-3 max-w-5xl mx-auto text-white">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-3 max-w-5xl mx-auto text-white" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               <div className="text-sm">• Power of Attorney</div>
               <div className="text-sm">• Reverse Mortgage Closing</div>
               <div className="text-sm">• Refinance Loan</div>
@@ -130,8 +130,8 @@ const Footer = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="border-t border-[#cdad7d]/20 pt-8 text-center"
         >
-          <p className="text-gray-300">
-            © 2025 Trust Notary | Wanda Jones, Texas Notary Public
+          <p className="text-gray-300" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+            © 2025 Trust Notary | <span style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 700 }}>Wanda Jones</span>, Texas Notary Public
           </p>
         </motion.div>
       </div>

@@ -38,7 +38,7 @@ const Hero = () => {
             <div className="flex items-center justify-center space-x-2 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
               <Star className="w-5 h-5 text-[#cdad7d] fill-current" />
               <div className="flex flex-col">
-                <span className="text-xs text-gray-800 font-bold">Rated 5-Stars on Google</span>
+                <span className="text-xs text-gray-800 font-bold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Rated 5-Stars on Google</span>
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-3 h-3 text-[#cdad7d] fill-current" />
@@ -48,7 +48,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center justify-center space-x-2 bg-white/95 backdrop-blur-sm px-4 py-3 rounded-lg shadow-lg">
               <Shield className="w-6 h-6 text-[#cdad7d]" />
-              <span className="text-sm text-gray-800 font-bold">Trusted, Certified<br/>& Insured</span>
+              <span className="text-sm text-gray-800 font-bold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Trusted, Certified<br/>& Insured</span>
             </div>
           </motion.div>
 
@@ -65,12 +65,12 @@ const Hero = () => {
                 <br />
                 <span className="text-white">So Does Who You Send</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-gray-200 max-w-3xl leading-relaxed">
+              <p className="text-xl lg:text-2xl text-gray-200 max-w-3xl leading-relaxed" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                 We show up on time, triple-check every document, and deliver professional, mobile signings—when and where your clients need them.
               </p>
             </div>
 
-            <button className="bg-black border-2 border-white text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-900 transition-all transform hover:scale-105 shadow-2xl uppercase tracking-wider">
+            <button className="bg-black border-2 border-white text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-900 transition-all transform hover:scale-105 shadow-2xl uppercase tracking-wider" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               Close with Confidence
             </button>
           </motion.div>

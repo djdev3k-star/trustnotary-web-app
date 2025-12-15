@@ -36,11 +36,11 @@ const Testimonials = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
             Feedback from{' '}
             <span className="text-blue-600 font-semibold">Clients</span>
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
             Don't just take our word for it. See what our satisfied clients have to say about our notary services.
           </p>
         </motion.div>
@@ -66,7 +66,7 @@ const Testimonials = () => {
               </div>
 
               {/* Testimonial Text */}
-              <p className="text-slate-700 mb-6 leading-relaxed italic">
+              <p className="text-slate-700 mb-6 leading-relaxed italic" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                 "{testimonial.text}"
               </p>
 
@@ -74,10 +74,10 @@ const Testimonials = () => {
               <div className="flex items-center space-x-3">
                 <div className="text-3xl">{testimonial.avatar}</div>
                 <div>
-                  <div className="font-semibold text-slate-900">
+                  <div className="font-semibold text-slate-900" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                     {testimonial.name}
                   </div>
-                  <div className="text-slate-600 text-sm">
+                  <div className="text-slate-600 text-sm" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                     {testimonial.role}
                   </div>
                 </div>
@@ -93,7 +93,7 @@ const Testimonials = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-16"
         >
-          <div className="inline-flex items-center space-x-8 bg-slate-100 rounded-full px-8 py-4">
+          <div className="inline-flex items-center space-x-8 bg-slate-100 rounded-full px-8 py-4" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
             <div className="text-center">
               <div className="text-2xl font-bold text-slate-900">500+</div>
               <div className="text-slate-600 text-sm">Happy Clients</div>

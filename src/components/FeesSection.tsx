@@ -37,6 +37,7 @@ const FeesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-4xl md:text-5xl font-bold text-[#142631] leading-tight mb-6"
+              style={{ fontFamily: 'Cormorant Garamond, serif' }}
             >
               Mortgage and Loan Fees
             </motion.h2>
@@ -46,6 +47,7 @@ const FeesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-xl text-[#142631]/80 leading-relaxed"
+              style={{ fontFamily: 'Cormorant Garamond, serif' }}
             >
               Transparent pricing built for speed, accuracy, and value. All fees comply with Texas Government Code § 406.024.
             </motion.p>
@@ -68,11 +70,11 @@ const FeesSection = () => {
               >
                 <div className="flex items-center space-x-4">
                   <div className="w-3 h-3 bg-[#cdad7d] rounded-full" />
-                  <span className="text-lg font-medium text-[#142631]">
+                  <span className="text-lg font-medium text-[#142631]" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                     {service.name}
                   </span>
                 </div>
-                <span className="text-xl font-bold text-[#142631]">
+                <span className="text-xl font-bold text-[#142631]" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   {service.price}
                 </span>
               </motion.div>
@@ -84,7 +86,7 @@ const FeesSection = () => {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="text-center pt-8"
             >
-              <p className="text-[#142631]/70 text-sm mb-4">
+              <p className="text-[#142631]/70 text-sm mb-4" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                 Additional travel fees may apply for locations outside standard service area.
               </p>
             </motion.div>
