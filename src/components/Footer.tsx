@@ -24,9 +24,9 @@ const Footer = () => {
           >
             <div className="mb-6">
               <img
-                src="https://trust-notary.com/_assets/media/d6e45f5f618e1ed38748f618f54f523a.png"
+                src="https://trust-notary.com/61b326e6-b46f-46bd-9ed6-09fa51ab202f"
                 alt="Trust Notary Logo"
-                className="h-16 w-auto mb-4"
+                className="h-16 w-auto mb-4 transform scale-x-[-1]"
               />
             </div>
             <p className="text-gray-300 mb-4">
