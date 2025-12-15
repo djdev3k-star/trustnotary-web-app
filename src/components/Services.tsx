@@ -134,24 +134,53 @@ const Services = () => {
           className="text-center mt-16"
         >
           <div className="bg-[#142631] rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+            <h3 className="text-2xl font-semibold text-white mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               Texas Notary Fee Schedule
             </h3>
-            <p className="text-[#cdad7d] mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Per Government Code § <span style={{ fontFamily: 'EB Garamond, serif' }}>406.024</span></p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-              <div>
-                <h4 className="font-semibold text-white mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Transparent</h4>
-                <p className="text-gray-300 text-sm" style={{ fontFamily: 'Cormorant Garamond, serif' }}>No hidden fees or surprise charges. What you see is what you pay.</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-white mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Professional</h4>
-                <p className="text-gray-300 text-sm" style={{ fontFamily: 'Cormorant Garamond, serif' }}>State-certified notary with years of experience in real estate closings.</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-white mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Convenient</h4>
-                <p className="text-gray-300 text-sm" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Mobile service available. We come to you at your convenience.</p>
-              </div>
+            <p className="text-[#cdad7d] mb-8" style={{ fontFamily: 'Cormorant Garamond, serif' }}>(Effective per Texas Government Code § 406.024)</p>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left">
+                <tbody>
+                  <tr className="border-b border-white/10">
+                    <td className="py-3 pr-4 text-white" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Acknowledgment or Proof (per signer)</td>
+                    <td className="py-3 text-[#cdad7d] font-semibold text-right" style={{ fontFamily: 'EB Garamond, serif' }}>$10</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="py-3 pr-4 text-white" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Each Additional Signatures (same document)</td>
+                    <td className="py-3 text-[#cdad7d] font-semibold text-right" style={{ fontFamily: 'EB Garamond, serif' }}>$1</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="py-3 pr-4 text-white" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Oath or Affirmation</td>
+                    <td className="py-3 text-[#cdad7d] font-semibold text-right" style={{ fontFamily: 'EB Garamond, serif' }}>$10</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="py-3 pr-4 text-white" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Jurat (Affidavit/Sworn Statement)</td>
+                    <td className="py-3 text-[#cdad7d] font-semibold text-right" style={{ fontFamily: 'EB Garamond, serif' }}>$10</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="py-3 pr-4 text-white" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Certified Copy of Non-Recordable Document</td>
+                    <td className="py-3 text-[#cdad7d] font-semibold text-right" style={{ fontFamily: 'EB Garamond, serif' }}>$10</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="py-3 pr-4 text-white" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Protest of a Bill or Note</td>
+                    <td className="py-3 text-[#cdad7d] font-semibold text-right" style={{ fontFamily: 'EB Garamond, serif' }}>$4</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="py-3 pr-4 text-white" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Each Notice of Protest</td>
+                    <td className="py-3 text-[#cdad7d] font-semibold text-right" style={{ fontFamily: 'EB Garamond, serif' }}>$1</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 pr-4 text-white" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Other Notarial Acts Allowed by Law</td>
+                    <td className="py-3 text-[#cdad7d] font-semibold text-right" style={{ fontFamily: 'EB Garamond, serif' }}>$10</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+
+            <p className="text-white/60 text-sm mt-6 text-center italic" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+              *additional travel and convenience fees may apply
+            </p>
           </div>
         </motion.div>
       </div>

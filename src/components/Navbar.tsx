@@ -25,9 +25,16 @@ const Navbar = () => {
     <motion.nav
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black/90 backdrop-blur-md shadow-lg' : 'bg-black/60 backdrop-blur-sm'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled ? 'bg-black/90 backdrop-blur-md' : 'bg-transparent'
       }`}
+      style={{
+        boxShadow: isScrolled ? '0 8px 32px -8px rgba(0, 0, 0, 0.3)' : 'none',
+        borderBottom: isScrolled ? '1px solid rgba(205, 173, 125, 0.1)' : 'none',
+        background: isScrolled
+          ? 'linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.9) 90%, rgba(0, 0, 0, 0.7) 100%)'
+          : 'transparent'
+      }}
     >
       <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="flex items-center justify-between">
@@ -47,7 +54,7 @@ const Navbar = () => {
                 </span>
               </div>
               <span className="text-white text-base" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-                <span style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>Wanda Jones</span>, Notary Public
+                <span style={{ fontFamily: 'EB Garamond, serif', fontWeight: 600 }}>Wanda Jones</span>, Notary Public
               </span>
             </div>
           </div>
