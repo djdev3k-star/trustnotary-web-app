@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Star, Shield, Phone } from 'lucide-react';
+import { Star, Shield } from 'lucide-react';
 
 const heroVideo = 'https://trust-notary.com/_assets/video/10a39bf285bb22e99497f536dcf905a3.mp4';
 const heroPosterImage = 'https://trust-notary.com/_assets/media/04635ee3f7d37abf84d4fb40b9f6f952.jpg';
@@ -52,18 +52,6 @@ const Hero = () => {
               <Star className="w-5 h-5 text-[#cdad7d] fill-current" />
               <span className="text-sm text-white font-medium">Rated 5-Stars on Google</span>
             </div>
-          </div>
-
-          <div className="pt-4">
-            <a
-              href="tel:2146854750"
-              className="inline-flex items-center space-x-3 mb-6"
-            >
-              <Phone className="w-7 h-7 text-[#cdad7d]" />
-              <span className="text-3xl font-bold text-white hover:text-[#cdad7d] transition-colors">
-                (214) 685-4750
-              </span>
-            </a>
           </div>
 
           <button className="bg-[#142631] border-2 border-[#cdad7d] text-white px-10 py-5 rounded-lg font-bold text-xl hover:bg-[#1a3340] transition-all transform hover:scale-105 shadow-2xl">
