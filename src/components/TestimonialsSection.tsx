@@ -45,10 +45,17 @@ const TestimonialsSection = () => {
           <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
             Client <span className="text-[#cdad7d]">Testimonials</span>
           </h2>
-          <div className="flex items-center justify-center space-x-1 mb-4">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} size={28} className="text-[#cdad7d] fill-current" />
-            ))}
+          <div className="flex items-center justify-center space-x-3 mb-4">
+            <img
+              src="/src/assets/google_g_icon_download.png"
+              alt="Google"
+              className="w-8 h-8"
+            />
+            <div className="flex items-center space-x-1">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} size={28} className="text-[#cdad7d] fill-current" />
+              ))}
+            </div>
           </div>
           <p className="text-xl text-gray-300">Rated 5-Stars on Google</p>
         </motion.div>
@@ -63,10 +70,17 @@ const TestimonialsSection = () => {
               className="bg-[#cdad7d]/5 backdrop-blur-sm border-2 border-[#cdad7d]/20 rounded-2xl p-8 hover:bg-[#cdad7d]/10 hover:border-[#cdad7d]/40 transition-all duration-300"
             >
               {/* Rating */}
-              <div className="flex items-center space-x-1 mb-6">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} size={18} className="text-[#cdad7d] fill-current" />
-                ))}
+              <div className="flex items-center space-x-2 mb-6">
+                <img
+                  src="/src/assets/google_g_icon_download.png"
+                  alt="Google"
+                  className="w-5 h-5"
+                />
+                <div className="flex items-center space-x-1">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} size={18} className="text-[#cdad7d] fill-current" />
+                  ))}
+                </div>
               </div>
 
               {/* Testimonial Text */}

@@ -90,6 +90,20 @@ const Footer = () => {
           </motion.div>
         </div>
 
+        {/* Banner Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+          className="border-t border-[#cdad7d]/20 pt-8 pb-8"
+        >
+          <img
+            src="/src/assets/home-page-setmore-gallery-6.png"
+            alt="Find the Right Notary Solution"
+            className="w-full max-w-3xl mx-auto"
+          />
+        </motion.div>
+
         {/* Bottom Bar */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

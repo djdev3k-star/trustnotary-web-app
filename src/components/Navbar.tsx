@@ -20,12 +20,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img
-              src="https://trust-notary.com/61b326e6-b46f-46bd-9ed6-09fa51ab202f"
+              src="/src/assets/setmore_logo.png"
               alt="Trust Notary Logo"
               className="h-12 w-auto"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-              }}
             />
             <div className="flex flex-col">
               <div className="flex items-baseline space-x-2">
