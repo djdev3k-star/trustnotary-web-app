@@ -27,7 +27,7 @@ const backgroundImage = 'https://trust-notary.com/_assets/media/00790bfe9288b578
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-32 text-white relative overflow-hidden">
+    <section id="testimonials" className="py-32 text-white relative overflow-hidden">
       {/* Full background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

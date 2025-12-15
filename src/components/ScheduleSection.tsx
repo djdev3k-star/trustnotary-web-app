@@ -5,7 +5,7 @@ const backgroundImage = 'https://trust-notary.com/_assets/media/3813b32831794102
 
 const ScheduleSection = () => {
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section id="schedule" className="py-32 relative overflow-hidden">
       {/* Full background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

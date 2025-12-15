@@ -5,7 +5,7 @@ const backgroundImage = 'https://trust-notary.com/_assets/media/04635ee3f7d37abf
 
 const AboutSection = () => {
   return (
-    <section className="relative py-40 overflow-hidden min-h-screen">
+    <section id="about" className="relative py-40 overflow-hidden min-h-screen">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${backgroundImage})` }}

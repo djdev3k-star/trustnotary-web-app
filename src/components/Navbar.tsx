@@ -3,24 +3,64 @@ import { motion } from 'framer-motion';
 import { Phone } from 'lucide-react';
 
 const Navbar = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <motion.nav
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-[#142631]/95 backdrop-blur-sm border-b border-[#cdad7d]/20"
+      className="fixed top-0 left-0 right-0 z-50 bg-transparent"
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img
-              src="https://trust-notary.com/61b326e6-b46f-46bd-9ed6-09fa51ab202f"
-              alt="Trust Notary Logo"
-              className="h-12 w-auto transform scale-x-[-1]"
-            />
+          <div className="flex items-center space-x-12">
+            <div className="flex items-center space-x-3">
+              <img
+                src="https://trust-notary.com/61b326e6-b46f-46bd-9ed6-09fa51ab202f"
+                alt="Trust Notary Logo"
+                className="h-12 w-auto transform scale-x-[-1]"
+              />
+            </div>
+
+            <div className="hidden md:flex items-center space-x-8">
+              <button
+                onClick={() => scrollToSection('about')}
+                className="text-white hover:text-[#cdad7d] transition-colors font-medium"
+              >
+                About
+              </button>
+              <button
+                onClick={() => scrollToSection('services')}
+                className="text-white hover:text-[#cdad7d] transition-colors font-medium"
+              >
+                Services
+              </button>
+              <button
+                onClick={() => scrollToSection('testimonials')}
+                className="text-white hover:text-[#cdad7d] transition-colors font-medium"
+              >
+                Testimonials
+              </button>
+              <button
+                onClick={() => scrollToSection('schedule')}
+                className="text-white hover:text-[#cdad7d] transition-colors font-medium"
+              >
+                Schedule
+              </button>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="text-white hover:text-[#cdad7d] transition-colors font-medium"
+              >
+                Contact
+              </button>
+            </div>
           </div>
 
-          {/* Contact */}
           <a
             href="tel:2146854750"
             className="flex items-center space-x-2 bg-[#cdad7d] hover:bg-[#b89a6d] transition-colors px-4 py-2 rounded-lg"

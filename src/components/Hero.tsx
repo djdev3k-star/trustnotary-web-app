@@ -33,16 +33,13 @@ const Hero = () => {
           className="text-center space-y-8 max-w-4xl"
         >
           <div>
-            <h1 className="text-6xl lg:text-8xl font-bold leading-tight mb-4">
-              <span className="text-white">Trust</span>
-              <span className="text-[#cdad7d]"> / </span>
-              <span className="text-white">Notary</span>
+            <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
+              <span className="text-white">When Accuracy Matters,</span>
+              <br />
+              <span className="text-white">So Does Who You Send</span>
             </h1>
-            <p className="text-2xl text-gray-200 mb-2">
-              Professional Signing Services
-            </p>
-            <p className="text-xl text-[#cdad7d] font-semibold">
-              Wanda Jones, Notary Public
+            <p className="text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+              We show up on time, triple-check every document, and deliver professional, mobile signings—when and where your clients need them.
             </p>
           </div>
 
