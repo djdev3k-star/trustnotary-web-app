@@ -64,7 +64,7 @@ const Hero = () => {
             </button>
           </motion.div>
 
-          {/* Image/Visual Area */}
+          {/* Video Area */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -73,12 +73,20 @@ const Hero = () => {
           >
             <div className="relative w-full max-w-md">
               <div className="relative rounded-2xl overflow-hidden border-4 border-[#cdad7d]/30 shadow-2xl">
-                <img
-                  src="https://trust-notary.com/_assets/media/04635ee3f7d37abf84d4fb40b9f6f952.jpg"
-                  alt="Professional notary services"
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                   className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#142631]/40 to-transparent" />
+                  poster="https://trust-notary.com/_assets/media/04635ee3f7d37abf84d4fb40b9f6f952.jpg"
+                >
+                  <source
+                    src="https://trust-notary.com/_assets/video/10a39bf285bb22e99497f536dcf905a3.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#142631]/40 to-transparent pointer-events-none" />
               </div>
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#cdad7d]/20 rounded-full blur-2xl" />

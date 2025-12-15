@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
-import VideoShowcase from './components/VideoShowcase';
 import VisualShowcase from './components/VisualShowcase';
 import Services from './components/Services';
 import TestimonialsSection from './components/TestimonialsSection';
@@ -17,7 +16,6 @@ function App() {
       <Navbar />
       <Hero />
       <AboutSection />
-      <VideoShowcase />
       <VisualShowcase />
       <Services />
       <TestimonialsSection />
