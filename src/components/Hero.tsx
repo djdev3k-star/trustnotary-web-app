@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Star, Shield } from 'lucide-react';
+import googleIcon from '../assets/google_g_icon_download.png';
 
 const heroVideo = 'https://trust-notary.com/_assets/video/10a39bf285bb22e99497f536dcf905a3.mp4';
 const heroPosterImage = 'https://trust-notary.com/_assets/media/04635ee3f7d37abf84d4fb40b9f6f952.jpg';
@@ -36,7 +37,7 @@ const Hero = () => {
             className="absolute top-32 right-6 flex flex-col gap-4"
           >
             <div className="flex items-center justify-center space-x-2 px-4 py-2">
-              <Star className="w-5 h-5 text-[#cdad7d] fill-current" />
+              <img src={googleIcon} alt="Google" className="w-5 h-5" />
               <div className="flex flex-col">
                 <span className="text-xs text-white font-bold drop-shadow-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Rated <span style={{ fontFamily: 'EB Garamond, serif' }}>5</span>-Stars on Google</span>
                 <div className="flex">
@@ -70,7 +71,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <button className="bg-black border-2 border-white text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-900 transition-all transform hover:scale-105 shadow-2xl uppercase tracking-wider" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+            <button className="bg-black border border-[#cdad7d] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-900 transition-all transform hover:scale-105 shadow-2xl uppercase tracking-wider" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               Close with Confidence
             </button>
           </motion.div>
