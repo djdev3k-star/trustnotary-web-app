@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FileText, Home, Building, CreditCard, Plus } from 'lucide-react';
 
+const backgroundImage = 'https://trust-notary.com/_assets/media/0ee4b0c9015ee3a8870ba13160f8ca61.jpg';
+
 const services = [
   {
     icon: Home,
@@ -49,8 +51,14 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-20 bg-[#cdad7d]">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="relative py-20 overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      />
+      <div className="absolute inset-0 bg-[#cdad7d]/85" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
