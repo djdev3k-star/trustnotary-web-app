@@ -1,10 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+const backgroundImage = 'https://trust-notary.com/_assets/media/04635ee3f7d37abf84d4fb40b9f6f952.jpg';
+
 const AboutSection = () => {
   return (
-    <section className="py-24 bg-[#bcab99]">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="relative py-24 overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      />
+      <div className="absolute inset-0 bg-[#bcab99]/80" />
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="text-center space-y-8">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
