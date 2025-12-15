@@ -145,7 +145,7 @@ const ContactSection = () => {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative min-h-[800px] lg:min-h-screen flex items-center justify-center bg-gradient-to-br from-[#cdad7d]/10 to-[#142631]/5 p-12"
+          className="relative min-h-[800px] lg:min-h-screen flex items-start justify-center bg-gradient-to-br from-[#cdad7d]/10 to-[#142631]/5 p-12 pt-24"
         >
           <div className="flex flex-col items-center">
             <img
@@ -153,14 +153,14 @@ const ContactSection = () => {
               alt="Wanda Jones - Trust Notary"
               className="w-full max-w-md rounded-2xl shadow-2xl mb-8"
             />
-            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl max-w-md text-center">
-              <div className="text-gray-900 font-bold text-2xl mb-2" style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 700 }}>
+            <div className="bg-white/98 backdrop-blur-sm p-8 max-w-md text-center shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] border-b-4 border-[#cdad7d]">
+              <div className="text-gray-900 font-bold text-3xl mb-3" style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 700 }}>
                 Wanda Jones
               </div>
               <div className="text-[#cdad7d] font-semibold text-xl mb-4" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                 Licensed Notary Public
               </div>
-              <div className="text-gray-600" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+              <div className="text-gray-600 text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                 Bonded & Insured Professional serving the Dallas-Fort Worth Metroplex
               </div>
             </div>
