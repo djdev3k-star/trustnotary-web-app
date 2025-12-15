@@ -4,21 +4,21 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    text: "Trust Notary made the closing process smooth and easy. They arrived on time, were incredibly professional, and made sure every document was perfect. I couldn't have asked for better service during such an important transaction.",
-    author: "Sarah Johnson",
-    role: "Homebuyer",
+    text: "Wanda Jones was professional, patient... She took the time to understand the client's unique circumstances and never made anyone feel rushed. ... Thanks to her dedication, we were able to close the deal. Highly recommend her services!",
+    author: "Valerie Sotelo",
+    role: "",
     rating: 5
   },
   {
-    text: "As a real estate agent, I've worked with many notaries, but Trust Notary stands out. They're always punctual, thorough, and make my clients feel comfortable throughout the entire signing process.",
-    author: "Michael Chen", 
-    role: "Real Estate Agent",
+    text: "... I found Trust Notary in Seagoville and Ms. Wanda helped me out. She was incredibly kind, professional, and thorough. She took the time to explain everything clearly, making sure I understood each step of the process ...",
+    author: "Alex Felix",
+    role: "",
     rating: 5
   },
   {
-    text: "Professional, efficient, and trustworthy. Trust Notary handled our commercial real estate closing with expertise and attention to detail. They made a complex process feel effortless.",
-    author: "Jennifer Martinez",
-    role: "Business Owner", 
+    text: "We are traveling across country and needed to have paperwork notarized within hours. Wanda called within minutes and showed up within an hour. She is incredibly professional and kind. We could not have asked for better service.",
+    author: "Dana Vorhees",
+    role: "",
     rating: 5
   }
 ];
@@ -42,8 +42,8 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Client <span className="text-[#cdad7d]">Testimonials</span>
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+            Feedback from Clients
           </h2>
           <div className="flex items-center justify-center space-x-3 mb-4">
             <img
@@ -57,7 +57,7 @@ const TestimonialsSection = () => {
               ))}
             </div>
           </div>
-          <p className="text-xl text-gray-300">Rated 5-Stars on Google</p>
+          <p className="text-xl text-gray-300" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Rated <span style={{ fontFamily: 'EB Garamond, serif' }}>5</span>-Stars on Google</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -84,17 +84,14 @@ const TestimonialsSection = () => {
               </div>
 
               {/* Testimonial Text */}
-              <p className="text-gray-200 leading-relaxed mb-6 text-lg">
+              <p className="text-gray-200 leading-relaxed mb-6 text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                 "{testimonial.text}"
               </p>
 
               {/* Divider */}
               <div className="border-t-2 border-[#cdad7d]/30 pt-4">
-                <div className="font-semibold text-white text-lg">
+                <div className="font-semibold text-white text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   {testimonial.author}
-                </div>
-                <div className="text-[#cdad7d]">
-                  {testimonial.role}
                 </div>
               </div>
             </motion.div>

@@ -19,6 +19,7 @@ const LoanClosingsSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="text-4xl md:text-5xl font-light text-gray-900 leading-tight mb-6"
+                style={{ fontFamily: 'Cormorant Garamond, serif' }}
               >
                 Loan Closings Are{' '}
                 <span className="block font-normal">
@@ -34,23 +35,12 @@ const LoanClosingsSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-xl text-gray-600 leading-relaxed mb-6"
+                style={{ fontFamily: 'Cormorant Garamond, serif' }}
               >
-                Changes can kill your deal in the smallest details — 
-                a missed signature, an incorrect date, or a notary 
-                who didn't understand what they were signing. 
-                These mistakes don't just cause delays — they can 
-                cost thousands of dollars.
-              </motion.p>
-
-              <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-xl text-gray-600 leading-relaxed"
-              >
-                Our <strong>fully mobile service</strong> is designed for the 
-                convenience and peace of mind of everyone involved, 
-                and the successful loan closure depends on it.
+                Closings can fall apart over the smallest details: a missed signature,
+                a no-show notary, or a client who didn't understand what they were signing.
+                These mistakes don't just cause delays—they cost trust, time, and sometimes
+                even the deal.
               </motion.p>
             </div>
           </motion.div>

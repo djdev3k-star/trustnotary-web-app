@@ -5,10 +5,12 @@ import { Headphones } from 'lucide-react';
 const services = [
   { name: 'Refinance Documents', price: '$125 - $150' },
   { name: 'Buyer/Seller Documents', price: '$100 - $125' },
-  { name: 'Reverse Mortgage Application', price: '$175 - $175' },
-  { name: 'Loan Modification', price: '$575+' },
-  { name: 'Commercial Real Estate Closing', price: '$200+' },
-  { name: 'Add-Ons', price: '$25 each' }
+  { name: 'HELOC Office or Home', price: '$100 - $125' },
+  { name: 'Reverse Mortgage Application', price: '$125 - $150' },
+  { name: 'Reverse Mortgage Closing', price: '$150 - $175' },
+  { name: 'Add-Ons each', price: '$25.00' },
+  { name: 'Loan Modification', price: '$200+' },
+  { name: 'Commercial Real Estate Closing', price: '$200+' }
 ];
 
 const FeesSection = () => {
