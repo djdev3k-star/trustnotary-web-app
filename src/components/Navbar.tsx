@@ -32,7 +32,7 @@ const Navbar = () => {
         boxShadow: isScrolled ? '0 8px 32px -8px rgba(0, 0, 0, 0.3)' : 'none',
         borderBottom: isScrolled ? '1px solid rgba(205, 173, 125, 0.1)' : 'none',
         background: isScrolled
-          ? 'linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.9) 90%, rgba(0, 0, 0, 0.7) 100%)'
+          ? 'linear-gradient(to bottom, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0.3) 100%)'
           : 'transparent'
       }}
     >

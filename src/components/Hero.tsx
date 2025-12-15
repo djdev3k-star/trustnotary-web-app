@@ -35,10 +35,10 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="absolute top-32 right-6 flex flex-col gap-4"
           >
-            <div className="flex items-center justify-center space-x-2 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg">
+            <div className="flex items-center justify-center space-x-2 px-4 py-2">
               <Star className="w-5 h-5 text-[#cdad7d] fill-current" />
               <div className="flex flex-col">
-                <span className="text-xs text-gray-800 font-bold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Rated <span style={{ fontFamily: 'EB Garamond, serif' }}>5</span>-Stars on Google</span>
+                <span className="text-xs text-white font-bold drop-shadow-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Rated <span style={{ fontFamily: 'EB Garamond, serif' }}>5</span>-Stars on Google</span>
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-3 h-3 text-[#cdad7d] fill-current" />
@@ -46,9 +46,9 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-center space-x-2 bg-white/95 backdrop-blur-sm px-4 py-3 rounded-lg shadow-lg">
+            <div className="flex items-center justify-center space-x-2 px-4 py-3">
               <Shield className="w-6 h-6 text-[#cdad7d]" />
-              <span className="text-sm text-gray-800 font-bold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Trusted, Certified<br/>& Insured</span>
+              <span className="text-sm text-white font-bold drop-shadow-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Trusted, Certified<br/>& Insured</span>
             </div>
           </motion.div>
 
