@@ -5,7 +5,6 @@ import AboutSection from './components/AboutSection';
 import VisualShowcase from './components/VisualShowcase';
 import Services from './components/Services';
 import TestimonialsSection from './components/TestimonialsSection';
-import FeesSection from './components/FeesSection';
 import ScheduleSection from './components/ScheduleSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -19,7 +18,6 @@ function App() {
       <VisualShowcase />
       <Services />
       <TestimonialsSection />
-      <FeesSection />
       <ScheduleSection />
       <ContactSection />
       <Footer />

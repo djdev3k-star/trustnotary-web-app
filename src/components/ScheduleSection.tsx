@@ -1,16 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+const backgroundImage = 'https://trust-notary.com/_assets/media/3813b32831794102f24059f09e0a6962.jpg';
+
 const ScheduleSection = () => {
   return (
-    <section className="py-32 bg-[#bcab99] relative overflow-hidden">
-      {/* Decorative pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, #142631 1px, transparent 0)',
-          backgroundSize: '40px 40px'
-        }} />
-      </div>
+    <section className="py-32 relative overflow-hidden">
+      {/* Full background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      />
+      <div className="absolute inset-0 bg-[#142631]/40" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <motion.div
@@ -23,7 +24,7 @@ const ScheduleSection = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-5xl md:text-6xl font-bold text-[#142631] leading-tight mb-8"
+            className="text-5xl md:text-6xl font-bold text-white leading-tight mb-8 drop-shadow-lg"
           >
             We handle every signing with care, accuracy, and total
             professionalism. Your documents are in good hands.

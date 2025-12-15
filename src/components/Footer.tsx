@@ -2,11 +2,20 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
+const backgroundImage = 'https://trust-notary.com/_assets/media/410302c96b526dec5577cf211c295462.png';
+const sideImage = 'https://trust-notary.com/_assets/media/b303c7f00f66528bd11ca25c0b1cb150.png';
+
 const Footer = () => {
   return (
-    <footer className="bg-[#142631] text-white py-16 border-t-2 border-[#cdad7d]/20">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+    <footer className="relative text-white py-16 overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      />
+      <div className="absolute inset-0 bg-[#142631]/85" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Logo and Contact */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -51,7 +60,7 @@ const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Quick Links */}
+          {/* Services */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -63,8 +72,21 @@ const Footer = () => {
               <li className="hover:text-[#cdad7d] transition-colors cursor-pointer">Buyer/Seller Documents</li>
               <li className="hover:text-[#cdad7d] transition-colors cursor-pointer">Reverse Mortgage</li>
               <li className="hover:text-[#cdad7d] transition-colors cursor-pointer">Commercial Real Estate</li>
-              <li className="hover:text-[#cdad7d] transition-colors cursor-pointer">Apostille Services</li>
             </ul>
+          </motion.div>
+
+          {/* Image */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="flex items-center justify-center"
+          >
+            <img
+              src={sideImage}
+              alt="Trust Notary"
+              className="w-full max-w-xs rounded-lg shadow-xl"
+            />
           </motion.div>
         </div>
 
@@ -72,25 +94,12 @@ const Footer = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
           className="border-t border-[#cdad7d]/20 pt-8 text-center"
         >
-          <p className="text-gray-400 mb-4">
-            © 2025 Trust Notary | All Rights Reserved | Wanda Jones, Texas Notary Public
+          <p className="text-gray-300">
+            © 2025 Trust Notary | Wanda Jones, Texas Notary Public
           </p>
-          <div className="flex items-center justify-center space-x-6 text-sm">
-            <a href="#" className="text-gray-400 hover:text-[#cdad7d] transition-colors">
-              Privacy Policy
-            </a>
-            <span className="text-gray-600">|</span>
-            <a href="#" className="text-gray-400 hover:text-[#cdad7d] transition-colors">
-              Terms of Service
-            </a>
-            <span className="text-gray-600">|</span>
-            <a href="#" className="text-gray-400 hover:text-[#cdad7d] transition-colors">
-              Contact
-            </a>
-          </div>
         </motion.div>
       </div>
     </footer>

@@ -23,16 +23,17 @@ const testimonials = [
   }
 ];
 
+const backgroundImage = 'https://trust-notary.com/_assets/media/00790bfe9288b5780c9d6c7a7fcca94f.jpg';
+
 const TestimonialsSection = () => {
   return (
-    <section className="py-32 bg-[#142631] text-white relative overflow-hidden">
-      {/* Decorative background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-          backgroundSize: '40px 40px'
-        }} />
-      </div>
+    <section className="py-32 text-white relative overflow-hidden">
+      {/* Full background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      />
+      <div className="absolute inset-0 bg-[#142631]/70" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <motion.div
