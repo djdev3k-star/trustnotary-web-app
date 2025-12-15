@@ -5,14 +5,17 @@ const backgroundImage = 'https://trust-notary.com/_assets/media/04635ee3f7d37abf
 
 const AboutSection = () => {
   return (
-    <section id="about" className="relative py-24 overflow-hidden">
+    <section id="about" className="relative py-40 overflow-hidden min-h-[60vh]">
       <div
-        className="absolute inset-0 bg-cover bg-top bg-no-repeat"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        className="absolute inset-0 bg-cover bg-no-repeat"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundPosition: 'center 30%'
+        }}
       />
       <div className="absolute inset-0 bg-[#142631]/40" />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center flex items-center justify-center min-h-[60vh]">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
