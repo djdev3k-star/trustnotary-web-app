@@ -45,26 +45,26 @@ const ContactSection = () => {
             >
               <div className="relative">
                 <motion.div
-                  initial={{ opacity: 0, y: -20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className="bg-black text-white text-center py-3 px-6 mb-0"
-                >
-                  <p className="text-2xl" style={{ fontFamily: 'Inter, sans-serif', fontWeight: 700 }}>
-                    Wanda Jones, <span className="font-normal">Notary Public</span>
-                  </p>
-                </motion.div>
-                <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.8, delay: 0.4 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
                   className="border-4 border-white shadow-2xl"
                 >
                   <img
                     src={wandaImage}
                     alt="Wanda Jones"
-                    className="w-full max-w-md"
+                    className="w-full max-w-xs"
                   />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-sm text-white text-center py-4 px-6"
+                >
+                  <p className="text-2xl font-semibold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                    I'm on my way!
+                  </p>
                 </motion.div>
               </div>
             </motion.div>
