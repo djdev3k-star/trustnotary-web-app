@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img
-              src="/src/assets/setmore_logo.png"
+              src="/src/assets/trust_notary_logo.svg"
               alt="Trust Notary Logo"
               className="h-12 w-auto"
             />
