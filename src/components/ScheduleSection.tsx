@@ -1,30 +1,33 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FileText, Home, Car, Video } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 
 const backgroundImage = 'https://trust-notary.com/_assets/media/3813b32831794102f24059f09e0a6962.jpg';
-const mortgageLoanImage = 'https://trust-notary.com/_assets/media/04a747008ac9ed0b219ae53a84d6eec9.jpg';
+const professionalServiceImage = 'https://trust-notary.com/_assets/media/a0cbf6662ccef407221ab03afbc5fb03.jpg';
+const realEstateClosingsImage = 'https://trust-notary.com/_assets/media/04a747008ac9ed0b219ae53a84d6eec9.jpg';
+const mobileServicesImage = 'https://trust-notary.com/_assets/media/00790bfe9288b5780c9d6c7a7fcca94f.jpg';
+const trustedPartnerImage = 'https://trust-notary.com/_assets/media/3813b32831794102f24059f09e0a6962.jpg';
 
 const services = [
   {
+    image: professionalServiceImage,
     title: 'General Notary',
-    icon: FileText,
     description: 'Professional notarization services for all document types'
   },
   {
-    title: 'Mortgage and Loan',
-    image: mortgageLoanImage,
+    image: realEstateClosingsImage,
+    title: 'Mortgage & Loan Closings',
     description: 'Expert handling of mortgage documents and loan signings'
   },
   {
+    image: mobileServicesImage,
     title: 'Mobile Notary',
-    icon: Car,
     description: 'Convenient notary services at your preferred location'
   },
   {
-    title: 'RON',
-    icon: Video,
-    description: 'Remote Online Notarization for digital convenience'
+    image: trustedPartnerImage,
+    title: 'Remote Online Notarization',
+    description: 'Secure RON services for digital convenience'
   }
 ];
 
@@ -65,30 +68,27 @@ const ScheduleSection = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group relative overflow-hidden rounded-xl bg-white/95 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-300"
+                className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
               >
-                {service.image ? (
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#142631]/80 to-transparent" />
-                  </div>
-                ) : (
-                  <div className="flex items-center justify-center h-48 bg-gradient-to-br from-[#142631] to-[#1a3340]">
-                    {service.icon && <service.icon className="w-16 h-16 text-[#cdad7d]" />}
-                  </div>
-                )}
+                <div className="relative h-64 overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#142631]/90 via-[#142631]/40 to-transparent" />
 
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-[#142631] mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-                    {service.title}
-                  </h3>
-                  <p className="text-sm text-[#142631]/70">
-                    {service.description}
-                  </p>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <div className="flex items-start space-x-2 mb-2">
+                      <CheckCircle2 className="w-5 h-5 text-[#cdad7d] mt-1 flex-shrink-0" />
+                      <h3 className="text-lg font-bold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                        {service.title}
+                      </h3>
+                    </div>
+                    <p className="text-sm text-gray-300" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             ))}

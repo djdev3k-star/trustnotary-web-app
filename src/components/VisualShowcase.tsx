@@ -1,101 +1,90 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2 } from 'lucide-react';
+import { Award, Clock, Shield, Users } from 'lucide-react';
 
 const backgroundImage = 'https://trust-notary.com/_assets/media/a0cbf6662ccef407221ab03afbc5fb03.jpg';
-const professionalServiceImage = 'https://trust-notary.com/_assets/media/a0cbf6662ccef407221ab03afbc5fb03.jpg';
-const realEstateClosingsImage = 'https://trust-notary.com/_assets/media/04a747008ac9ed0b219ae53a84d6eec9.jpg';
-const mobileServicesImage = 'https://trust-notary.com/_assets/media/00790bfe9288b5780c9d6c7a7fcca94f.jpg';
-const trustedPartnerImage = 'https://trust-notary.com/_assets/media/3813b32831794102f24059f09e0a6962.jpg';
 
 const showcaseItems = [
   {
-    image: professionalServiceImage,
-    title: 'Professional Service',
-    description: 'Expert document handling with attention to every detail'
+    icon: Award,
+    title: 'Professional Excellence',
+    description: 'Expert document handling with meticulous attention to every detail'
   },
   {
-    image: realEstateClosingsImage,
-    title: 'Real Estate Closings',
-    description: 'Smooth and efficient real estate transaction support'
+    icon: Clock,
+    title: 'On-Time Service',
+    description: 'We show up when we say we will, ready to get the job done right'
   },
   {
-    image: mobileServicesImage,
-    title: 'Mobile Services',
-    description: 'We come to you at your convenience'
+    icon: Users,
+    title: 'Client-Focused',
+    description: 'Your convenience is our priority with flexible scheduling options'
   },
   {
-    image: trustedPartnerImage,
-    title: 'Trusted Partner',
-    description: 'Building lasting relationships through reliable service'
+    icon: Shield,
+    title: 'Trusted & Secure',
+    description: 'Licensed, bonded, and insured for complete peace of mind'
   }
 ];
 
 const VisualShowcase = () => {
   return (
-    <section className="relative py-20 overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      />
+    <section className="relative py-32 overflow-hidden">
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div
+          className="bg-cover bg-center bg-no-repeat w-4/5 h-3/4"
+          style={{
+            backgroundImage: `url(${backgroundImage})`,
+            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
+          }}
+        />
+      </div>
+      <div className="absolute inset-0 bg-[#cdad7d]/40" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-[#142631] mb-6">
-            Why Choose <span className="text-[#cdad7d]">Trust Notary</span>
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+            Why Choose Trust Notary
           </h2>
-          <p className="text-xl text-[#142631]/80 max-w-3xl mx-auto">
+          <p className="text-2xl text-white/90 max-w-3xl mx-auto" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
             Professional notary services delivered with excellence and integrity
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {showcaseItems.map((item, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+              transition={{ duration: 0.6, delay: index * 0.15 }}
+              className="flex items-start space-x-6"
             >
-              <div className="relative h-64 overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#142631]/90 via-[#142631]/40 to-transparent" />
-
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <div className="flex items-start space-x-2 mb-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#cdad7d] mt-1 flex-shrink-0" />
-                    <h3 className="text-lg font-bold">{item.title}</h3>
-                  </div>
-                  <p className="text-sm text-gray-300">{item.description}</p>
+              <motion.div
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="flex-shrink-0"
+              >
+                <div className="bg-white/95 backdrop-blur-sm p-5 rounded-2xl shadow-xl">
+                  <item.icon className="w-10 h-10 text-[#cdad7d]" strokeWidth={1.5} />
                 </div>
+              </motion.div>
+              <div className="text-left">
+                <h3 className="text-2xl font-bold text-white mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                  {item.title}
+                </h3>
+                <p className="text-lg text-white/90 leading-relaxed" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                  {item.description}
+                </p>
               </div>
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-center mt-12"
-        >
-          <div className="inline-flex items-center space-x-2 bg-[#cdad7d]/10 border-2 border-[#cdad7d]/30 px-6 py-3 rounded-lg">
-            <CheckCircle2 className="w-5 h-5 text-[#cdad7d]" />
-            <span className="text-[#142631] font-semibold">
-              Licensed, Bonded, and Insured for Your Protection
-            </span>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
