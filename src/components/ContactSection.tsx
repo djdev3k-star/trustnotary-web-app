@@ -23,15 +23,22 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="relative overflow-hidden">
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        {/* Left - Contact Form */}
-        <div className="bg-white py-32 px-6 lg:px-16">
+    <section id="contact" className="relative overflow-hidden min-h-screen flex items-center">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('https://trust-notary.com/_assets/media/410302c96b526dec5577cf211c295462.png')"
+        }}
+      />
+      <div className="absolute inset-0 bg-[#142631]/20" />
+
+      <div className="relative z-10 w-full py-32 px-6">
+        <div className="max-w-2xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-xl"
+            className="bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl p-8 md:p-12"
           >
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
@@ -64,7 +71,7 @@ const ContactSection = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#cdad7d] focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#cdad7d] focus:outline-none transition-colors bg-white"
                   placeholder="John Doe"
                 />
               </div>
@@ -80,7 +87,7 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#cdad7d] focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#cdad7d] focus:outline-none transition-colors bg-white"
                   placeholder="john@example.com"
                 />
               </div>
@@ -96,7 +103,7 @@ const ContactSection = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#cdad7d] focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#cdad7d] focus:outline-none transition-colors bg-white"
                   placeholder="(214) 685-4750"
                 />
               </div>
@@ -112,7 +119,7 @@ const ContactSection = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#cdad7d] focus:outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#cdad7d] focus:outline-none transition-colors resize-none bg-white"
                   placeholder="Tell us about your notary needs..."
                 />
               </div>
@@ -139,33 +146,6 @@ const ContactSection = () => {
             </div>
           </motion.div>
         </div>
-
-        {/* Right - Profile Image */}
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative min-h-[800px] lg:min-h-screen flex items-start justify-center bg-gradient-to-br from-[#cdad7d]/10 to-[#142631]/5 p-12 pt-24"
-        >
-          <div className="flex flex-col items-center">
-            <img
-              src="https://trust-notary.com/_assets/media/b303c7f00f66528bd11ca25c0b1cb150.png"
-              alt="Wanda Jones - Trust Notary"
-              className="w-full max-w-md rounded-2xl shadow-2xl mb-8"
-            />
-            <div className="bg-white/98 backdrop-blur-sm p-8 max-w-md text-center shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] border-b-4 border-[#cdad7d]">
-              <div className="text-gray-900 font-bold text-3xl mb-3" style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 700 }}>
-                Wanda Jones
-              </div>
-              <div className="text-[#cdad7d] font-semibold text-xl mb-4" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-                Licensed Notary Public
-              </div>
-              <div className="text-gray-600 text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-                Bonded & Insured Professional serving the Dallas-Fort Worth Metroplex
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
