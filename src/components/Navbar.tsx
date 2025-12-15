@@ -46,8 +46,8 @@ const Navbar = () => {
                   NOTARY
                 </span>
               </div>
-              <span className="text-white text-sm" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-                Wanda Jones, Notary Public
+              <span className="text-white text-sm">
+                <span style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 700 }}>Wanda Jones</span>, Notary Public
               </span>
             </div>
           </div>

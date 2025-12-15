@@ -155,7 +155,7 @@ const ContactSection = () => {
 
           {/* Professional Badge */}
           <div className="absolute bottom-12 left-12 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl max-w-sm">
-            <div className="text-gray-900 font-bold text-xl mb-2" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+            <div className="text-gray-900 font-bold text-xl mb-2" style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 700 }}>
               Wanda Jones
             </div>
             <div className="text-[#cdad7d] font-semibold text-lg mb-3">

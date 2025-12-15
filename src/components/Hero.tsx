@@ -23,6 +23,7 @@ const Hero = () => {
             type="video/mp4"
           />
         </video>
+        <div className="absolute inset-0 bg-[#142631]/40" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 min-h-screen flex items-center">

@@ -33,7 +33,7 @@ const Footer = () => {
               Professional Signing Services
             </p>
             <p className="text-[#cdad7d] font-semibold">
-              Wanda Jones, Notary Public
+              <span style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 700 }}>Wanda Jones</span>, Notary Public
             </p>
           </motion.div>
 
