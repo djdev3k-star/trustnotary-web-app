@@ -25,56 +25,23 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="relative overflow-hidden py-32">
+    <section id="contact" className="relative overflow-hidden min-h-screen flex items-center">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{
-          backgroundImage: "url('https://trust-notary.com/_assets/media/410302c96b526dec5577cf211c295462.png')"
+          backgroundImage: `url(${wandaImage})`
         }}
       />
-      <div className="absolute inset-0 bg-[#142631]/20" />
+      <div className="absolute inset-0 bg-[#cdad7d]/50" />
 
-      <div className="relative z-10 w-full px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="flex justify-center lg:justify-start"
-            >
-              <div className="relative">
-                <motion.div
-                  initial={{ opacity: 0, y: -20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className="bg-black text-white text-center py-3 px-6 mb-0"
-                >
-                  <p className="text-2xl font-semibold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-                    I'm On My Way —
-                  </p>
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.8, delay: 0.4 }}
-                  className="border-4 border-white shadow-2xl"
-                >
-                  <img
-                    src={wandaImage}
-                    alt="Wanda Jones"
-                    className="w-full max-w-md"
-                  />
-                </motion.div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl p-8 md:p-12"
-            >
+      <div className="relative z-10 w-full py-32 px-6">
+        <div className="max-w-2xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-8 md:p-12"
+          >
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -168,8 +135,19 @@ const ContactSection = () => {
                 <Send className="w-5 h-5" />
               </button>
             </form>
+
+            <div className="mt-8 pt-8 border-t-2 border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                Contact Information
+              </h3>
+              <div className="space-y-2 text-gray-600" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                <p><span className="font-semibold">Phone:</span> <span style={{ fontFamily: 'EB Garamond, serif' }}>(214) 685-4750</span></p>
+                <p><span className="font-semibold">Email:</span> info@trust-notary.com</p>
+                <p><span className="font-semibold">Notary:</span> <span style={{ fontFamily: 'Inter, sans-serif', fontWeight: 700 }}>Wanda Jones</span></p>
+                <p><span className="font-semibold">Serving:</span> Dallas Metro & North Texas</p>
+              </div>
+            </div>
           </motion.div>
-          </div>
         </div>
       </div>
     </section>
