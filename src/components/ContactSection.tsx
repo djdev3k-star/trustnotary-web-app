@@ -140,31 +140,29 @@ const ContactSection = () => {
           </motion.div>
         </div>
 
-        {/* Right - Background Image */}
+        {/* Right - Profile Image */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative min-h-[800px] lg:min-h-screen"
+          className="relative min-h-[800px] lg:min-h-screen flex items-center justify-center bg-gradient-to-br from-[#cdad7d]/10 to-[#142631]/5 p-12"
         >
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: 'url(https://trust-notary.com/_assets/media/f3142f6ac4e5b930299dc9e030445db2.jpg)'
-            }}
-          />
-          <div className="absolute inset-0 bg-[#142631]/30" />
-
-          {/* Professional Badge */}
-          <div className="absolute bottom-12 left-12 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl max-w-sm">
-            <div className="text-gray-900 font-bold text-xl mb-2" style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 700 }}>
-              Wanda Jones
-            </div>
-            <div className="text-[#cdad7d] font-semibold text-lg mb-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-              Licensed Notary Public
-            </div>
-            <div className="text-gray-600 text-sm" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-              Bonded & Insured Professional serving the Dallas-Fort Worth Metroplex
+          <div className="flex flex-col items-center">
+            <img
+              src="https://trust-notary.com/_assets/media/b303c7f00f66528bd11ca25c0b1cb150.png"
+              alt="Wanda Jones - Trust Notary"
+              className="w-full max-w-md rounded-2xl shadow-2xl mb-8"
+            />
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl max-w-md text-center">
+              <div className="text-gray-900 font-bold text-2xl mb-2" style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 700 }}>
+                Wanda Jones
+              </div>
+              <div className="text-[#cdad7d] font-semibold text-xl mb-4" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                Licensed Notary Public
+              </div>
+              <div className="text-gray-600" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                Bonded & Insured Professional serving the Dallas-Fort Worth Metroplex
+              </div>
             </div>
           </div>
         </motion.div>
