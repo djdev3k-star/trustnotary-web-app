@@ -65,12 +65,10 @@ const Services = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-[#142631] mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-            Reliable Signings Every Time
+            Professional Services & Transparent Pricing
           </h2>
           <p className="text-xl text-[#142631]/80 max-w-3xl mx-auto leading-relaxed" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-            We offer flexible signing arrangements including refinance, buyer/seller documents,
-            HELOC, reverse mortgages, and more. Our commitment is to make your closing process
-            smooth and worry-free.
+            From residential closings to commercial transactions, we provide expert notary services with upfront pricing. No surprises, no hidden fees.
           </p>
         </motion.div>
 
