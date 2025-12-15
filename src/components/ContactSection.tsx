@@ -25,7 +25,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="relative overflow-hidden py-32">
+    <section id="contact" className="relative overflow-hidden py-16 sm:py-24 lg:py-32">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -34,14 +34,14 @@ const ContactSection = () => {
       />
       <div className="absolute inset-0 bg-[#142631]/20" />
 
-      <div className="relative z-10 w-full px-6">
+      <div className="relative z-10 w-full px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="flex justify-center lg:justify-start"
+              className="flex justify-center lg:justify-start order-2 lg:order-1"
             >
               <div className="relative">
                 <motion.div
@@ -53,16 +53,16 @@ const ContactSection = () => {
                   <img
                     src={wandaImage}
                     alt="Wanda Jones"
-                    className="w-full max-w-xs"
+                    className="w-full max-w-[250px] sm:max-w-xs"
                   />
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
-                  className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-sm text-white text-center py-4 px-6"
+                  className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-sm text-white text-center py-3 sm:py-4 px-4 sm:px-6"
                 >
-                  <p className="text-2xl font-semibold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                  <p className="text-lg sm:text-xl lg:text-2xl font-semibold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                     I'm on my way!
                   </p>
                 </motion.div>
@@ -73,13 +73,13 @@ const ContactSection = () => {
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl p-8 md:p-12"
+              className="bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl p-6 sm:p-8 lg:p-12 order-1 lg:order-2"
             >
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-3 sm:mb-4"
               style={{ fontFamily: 'Cormorant Garamond, serif' }}
             >
               Get In Touch
@@ -88,7 +88,7 @@ const ContactSection = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-xl text-gray-600 mb-8"
+              className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8"
               style={{ fontFamily: 'Cormorant Garamond, serif' }}
             >
               Ready to schedule your notary appointment? Contact us today.

@@ -27,7 +27,7 @@ const backgroundImage = 'https://trust-notary.com/_assets/media/00790bfe9288b578
 
 const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="py-32 text-white relative overflow-hidden">
+    <section id="testimonials" className="py-16 sm:py-24 lg:py-32 text-white relative overflow-hidden">
       {/* Full background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -35,62 +35,62 @@ const TestimonialsSection = () => {
       />
       <div className="absolute inset-0 bg-[#142631]/70" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-12 lg:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 sm:mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
             Feedback from Clients
           </h2>
-          <div className="flex items-center justify-center space-x-3 mb-4">
+          <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
             <img
               src="/src/assets/google_g_icon_download.png"
               alt="Google"
-              className="w-8 h-8"
+              className="w-6 h-6 sm:w-8 sm:h-8"
             />
-            <div className="flex items-center space-x-1">
+            <div className="flex items-center space-x-0.5 sm:space-x-1">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} size={28} className="text-[#cdad7d] fill-current" />
+                <Star key={i} size={20} className="sm:w-7 sm:h-7 text-[#cdad7d] fill-current" />
               ))}
             </div>
           </div>
-          <p className="text-xl text-gray-300" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Rated <span style={{ fontFamily: 'EB Garamond, serif' }}>5</span>-Stars on Google</p>
+          <p className="text-base sm:text-lg lg:text-xl text-gray-300" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Rated <span style={{ fontFamily: 'EB Garamond, serif' }}>5</span>-Stars on Google</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-[#cdad7d]/5 backdrop-blur-sm border-2 border-[#cdad7d]/20 rounded-2xl p-8 hover:bg-[#cdad7d]/10 hover:border-[#cdad7d]/40 transition-all duration-300"
+              className="bg-[#cdad7d]/5 backdrop-blur-sm border-2 border-[#cdad7d]/20 rounded-2xl p-5 sm:p-6 lg:p-8 hover:bg-[#cdad7d]/10 hover:border-[#cdad7d]/40 transition-all duration-300"
             >
               {/* Rating */}
-              <div className="flex items-center space-x-2 mb-6">
+              <div className="flex items-center space-x-2 mb-4 sm:mb-6">
                 <img
                   src="/src/assets/google_g_icon_download.png"
                   alt="Google"
-                  className="w-5 h-5"
+                  className="w-4 h-4 sm:w-5 sm:h-5"
                 />
-                <div className="flex items-center space-x-1">
+                <div className="flex items-center space-x-0.5 sm:space-x-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} size={18} className="text-[#cdad7d] fill-current" />
+                    <Star key={i} size={16} className="sm:w-[18px] sm:h-[18px] text-[#cdad7d] fill-current" />
                   ))}
                 </div>
               </div>
 
               {/* Testimonial Text */}
-              <p className="text-gray-200 leading-relaxed mb-6 text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+              <p className="text-gray-200 leading-relaxed mb-4 sm:mb-6 text-sm sm:text-base lg:text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                 "{testimonial.text}"
               </p>
 
               {/* Divider */}
-              <div className="border-t-2 border-[#cdad7d]/30 pt-4">
-                <div className="font-semibold text-white text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+              <div className="border-t-2 border-[#cdad7d]/30 pt-3 sm:pt-4">
+                <div className="font-semibold text-white text-base sm:text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   {testimonial.author}
                 </div>
               </div>

@@ -52,24 +52,24 @@ const Navbar = () => {
           : 'transparent'
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 lg:py-8">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 sm:space-x-4">
             <img
               src="/src/assets/trust_notary_logo.svg"
               alt="Trust Notary Logo"
-              className="h-20 w-auto"
+              className="h-12 sm:h-16 lg:h-20 w-auto"
             />
             <div className="flex flex-col">
-              <div className="flex items-baseline space-x-2">
-                <span className="text-white text-5xl font-bold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+              <div className="flex items-baseline space-x-1 sm:space-x-2">
+                <span className="text-white text-2xl sm:text-3xl lg:text-5xl font-bold" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   Trust
                 </span>
-                <span className="text-white text-2xl font-normal tracking-widest uppercase" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+                <span className="text-white text-sm sm:text-lg lg:text-2xl font-normal tracking-widest uppercase" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                   NOTARY
                 </span>
               </div>
-              <span className="text-white text-base" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+              <span className="text-white text-xs sm:text-sm lg:text-base" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
                 <span style={{ fontFamily: 'EB Garamond, serif', fontWeight: 600 }}>Wanda Jones</span>, Notary Public
               </span>
             </div>
