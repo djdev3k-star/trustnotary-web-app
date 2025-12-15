@@ -23,7 +23,7 @@ const Navbar = () => {
               <img
                 src="https://trust-notary.com/61b326e6-b46f-46bd-9ed6-09fa51ab202f"
                 alt="Trust Notary Logo"
-                className="h-12 w-auto transform scale-x-[-1]"
+                className="h-12 w-auto"
               />
             </div>
 

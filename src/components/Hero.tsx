@@ -25,12 +25,12 @@ const Hero = () => {
         </video>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 min-h-screen flex items-center justify-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 min-h-screen flex items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center space-y-8 max-w-4xl"
+          className="space-y-8 max-w-4xl"
         >
           <div>
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
@@ -38,12 +38,12 @@ const Hero = () => {
               <br />
               <span className="text-white">So Does Who You Send</span>
             </h1>
-            <p className="text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl lg:text-2xl text-gray-200 max-w-3xl leading-relaxed">
               We show up on time, triple-check every document, and deliver professional, mobile signings—when and where your clients need them.
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-4 justify-center">
+          <div className="flex flex-wrap gap-4">
             <div className="flex items-center space-x-2 bg-[#cdad7d]/20 backdrop-blur-sm border border-[#cdad7d]/40 px-6 py-3 rounded-lg">
               <Shield className="w-5 h-5 text-[#cdad7d]" />
               <span className="text-sm text-white font-medium">Trusted, Certified & Insured</span>
@@ -66,7 +66,7 @@ const Hero = () => {
             </a>
           </div>
 
-          <button className="bg-[#cdad7d] text-[#142631] px-10 py-5 rounded-lg font-bold text-xl hover:bg-[#b89a6d] transition-all transform hover:scale-105 shadow-2xl">
+          <button className="bg-[#142631] border-2 border-[#cdad7d] text-white px-10 py-5 rounded-lg font-bold text-xl hover:bg-[#1a3340] transition-all transform hover:scale-105 shadow-2xl">
             Close with Confidence
           </button>
         </motion.div>
