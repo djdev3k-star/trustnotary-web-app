@@ -2,24 +2,29 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
 
+const professionalServiceImage = 'https://trust-notary.com/_assets/media/a0cbf6662ccef407221ab03afbc5fb03.jpg';
+const realEstateClosingsImage = 'https://trust-notary.com/_assets/media/04a747008ac9ed0b219ae53a84d6eec9.jpg';
+const mobileServicesImage = 'https://trust-notary.com/_assets/media/00790bfe9288b5780c9d6c7a7fcca94f.jpg';
+const trustedPartnerImage = 'https://trust-notary.com/_assets/media/3813b32831794102f24059f09e0a6962.jpg';
+
 const showcaseItems = [
   {
-    image: 'https://trust-notary.com/_assets/media/a0cbf6662ccef407221ab03afbc5fb03.jpg',
+    image: professionalServiceImage,
     title: 'Professional Service',
     description: 'Expert document handling with attention to every detail'
   },
   {
-    image: 'https://trust-notary.com/_assets/media/04a747008ac9ed0b219ae53a84d6eec9.jpg',
+    image: realEstateClosingsImage,
     title: 'Real Estate Closings',
     description: 'Smooth and efficient real estate transaction support'
   },
   {
-    image: 'https://trust-notary.com/_assets/media/00790bfe9288b5780c9d6c7a7fcca94f.jpg',
+    image: mobileServicesImage,
     title: 'Mobile Services',
     description: 'We come to you at your convenience'
   },
   {
-    image: 'https://trust-notary.com/_assets/media/3813b32831794102f24059f09e0a6962.jpg',
+    image: trustedPartnerImage,
     title: 'Trusted Partner',
     description: 'Building lasting relationships through reliable service'
   }

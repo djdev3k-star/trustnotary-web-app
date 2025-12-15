@@ -2,6 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Star, Shield, Phone } from 'lucide-react';
 
+const heroVideo = 'https://trust-notary.com/_assets/video/10a39bf285bb22e99497f536dcf905a3.mp4';
+const heroPosterImage = 'https://trust-notary.com/_assets/media/04635ee3f7d37abf84d4fb40b9f6f952.jpg';
+
 const Hero = () => {
   return (
     <section className="relative min-h-screen bg-[#142631] text-white overflow-hidden">
@@ -79,10 +82,10 @@ const Hero = () => {
                   loop
                   playsInline
                   className="w-full h-auto object-cover"
-                  poster="https://trust-notary.com/_assets/media/04635ee3f7d37abf84d4fb40b9f6f952.jpg"
+                  poster={heroPosterImage}
                 >
                   <source
-                    src="https://trust-notary.com/_assets/video/10a39bf285bb22e99497f536dcf905a3.mp4"
+                    src={heroVideo}
                     type="video/mp4"
                   />
                 </video>
