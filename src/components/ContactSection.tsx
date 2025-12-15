@@ -83,12 +83,12 @@ const ContactSection = () => {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://trust-notary.com/_assets/media/f3142f6ac4e5b930299dc9e030445db2.jpg"
                 alt="Wanda Jones, Professional Notary"
-                className="w-full h-96 object-cover"
+                className="w-full h-[500px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-              
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+
               {/* Professional Badge */}
               <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-xl">
                 <div className="text-gray-900 font-semibold">

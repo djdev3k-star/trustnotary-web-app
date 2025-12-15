@@ -13,13 +13,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-[#cdad7d] rounded-full flex items-center justify-center">
-              <span className="text-[#142631] font-bold text-xl">TN</span>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-white">Trust</div>
-              <div className="text-sm text-[#cdad7d] -mt-1 tracking-wider">NOTARY</div>
-            </div>
+            <img
+              src="https://trust-notary.com/_assets/media/d6e45f5f618e1ed38748f618f54f523a.png"
+              alt="Trust Notary Logo"
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Contact */}

@@ -13,14 +13,12 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-[#cdad7d] rounded-full flex items-center justify-center">
-                <span className="text-[#142631] font-bold text-xl">TN</span>
-              </div>
-              <div>
-                <div className="text-2xl font-bold">Trust</div>
-                <div className="text-lg text-[#cdad7d] -mt-1">NOTARY</div>
-              </div>
+            <div className="mb-6">
+              <img
+                src="https://trust-notary.com/_assets/media/d6e45f5f618e1ed38748f618f54f523a.png"
+                alt="Trust Notary Logo"
+                className="h-16 w-auto mb-4"
+              />
             </div>
             <p className="text-gray-300 mb-4">
               Professional Signing Services

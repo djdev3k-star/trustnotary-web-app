@@ -72,18 +72,17 @@ const Hero = () => {
             className="flex justify-center items-center"
           >
             <div className="relative w-full max-w-md">
-              {/* Placeholder for hero image - you can replace this with your actual image */}
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-[#cdad7d]/20 to-[#cdad7d]/5 border-2 border-[#cdad7d]/30 flex items-center justify-center">
-                <div className="text-center space-y-4 p-8">
-                  <Shield className="w-24 h-24 text-[#cdad7d] mx-auto" />
-                  <p className="text-[#cdad7d] text-xl font-semibold">Professional</p>
-                  <p className="text-[#cdad7d] text-xl font-semibold">Reliable</p>
-                  <p className="text-[#cdad7d] text-xl font-semibold">Certified</p>
-                </div>
+              <div className="relative rounded-2xl overflow-hidden border-4 border-[#cdad7d]/30 shadow-2xl">
+                <img
+                  src="https://trust-notary.com/_assets/media/04635ee3f7d37abf84d4fb40b9f6f952.jpg"
+                  alt="Professional notary services"
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#142631]/40 to-transparent" />
               </div>
               {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#cdad7d]/10 rounded-full blur-2xl" />
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#cdad7d]/10 rounded-full blur-2xl" />
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#cdad7d]/20 rounded-full blur-2xl" />
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#cdad7d]/20 rounded-full blur-2xl" />
             </div>
           </motion.div>
         </div>
