@@ -95,13 +95,32 @@ const Footer = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="border-t border-[#cdad7d]/20 pt-8 pb-8"
+          className="border-t border-[#cdad7d]/20 pt-8 pb-8 -mx-6"
         >
-          <img
-            src="/src/assets/home-page-setmore-gallery-6.png"
-            alt="Find the Right Notary Solution"
-            className="w-full max-w-3xl mx-auto"
-          />
+          <div className="bg-[#cdad7d]/30 backdrop-blur-sm py-8 px-8">
+            <h3
+              className="text-2xl md:text-3xl font-bold text-center mb-8 text-white"
+              style={{ fontFamily: 'Cormorant Garamond, serif' }}
+            >
+              Find the Right Notary Solution
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-3 max-w-5xl mx-auto text-white">
+              <div className="text-sm">• Power of Attorney</div>
+              <div className="text-sm">• Reverse Mortgage Closing</div>
+              <div className="text-sm">• Refinance Loan</div>
+              <div className="text-sm">• Seller Package</div>
+              <div className="text-sm">• Wills & Trusts</div>
+              <div className="text-sm">• Loan Modification</div>
+              <div className="text-sm">• Purchase (Buyer Side)</div>
+              <div className="text-sm">• HELOC / Equity Loan</div>
+              <div className="text-sm">• Apostilles (facilitation available)</div>
+              <div className="text-sm">• Commercial Loans</div>
+              <div className="text-sm">• Construction Documents</div>
+              <div className="text-sm">• Reverse Mortgage Application</div>
+              <div className="text-sm">• Affidavits, School Forms, Travel Letters</div>
+              <div className="text-sm">• Real Estate & IoT Documents</div>
+            </div>
+          </div>
         </motion.div>
 
         {/* Bottom Bar */}
