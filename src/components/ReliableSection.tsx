@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import reliableBg from '../assets/reliable-bg.jpg';
 
 const ReliableSection = () => {
   return (
     <section className="py-32 bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
-          backgroundImage: `url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1600')`
+          backgroundImage: `url(${reliableBg})`
         }}
       />
       

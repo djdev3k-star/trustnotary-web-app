@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send } from 'lucide-react';
-
-const wandaImage = 'https://trust-notary.com/_assets/media/b303c7f00f66528bd11ca25c0b1cb150.png';
+import wandaImage from '../assets/wanda.png';
+import contactBg from '../assets/contact-bg.png';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +29,7 @@ const ContactSection = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://trust-notary.com/_assets/media/410302c96b526dec5577cf211c295462.png')"
+          backgroundImage: `url(${contactBg})`
         }}
       />
       <div className="absolute inset-0 bg-[#142631]/20" />

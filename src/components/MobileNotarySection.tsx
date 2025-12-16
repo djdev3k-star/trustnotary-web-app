@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import mobileNotaryBg from '../assets/mobile-notary-bg.jpg';
 
 const MobileNotarySection = () => {
   return (
     <section className="py-32 bg-gradient-to-br from-amber-50 to-orange-50 relative overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
         style={{
-          backgroundImage: `url('https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1600')`
+          backgroundImage: `url(${mobileNotaryBg})`
         }}
       />
 

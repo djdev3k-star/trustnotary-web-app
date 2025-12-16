@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
-const backgroundImage = 'https://trust-notary.com/_assets/media/a0cbf6662ccef407221ab03afbc5fb03.jpg';
+import backgroundImage from '../assets/showcase-bg.jpg';
 
 const showcaseItems = [
   {

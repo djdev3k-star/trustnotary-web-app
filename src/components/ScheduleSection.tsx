@@ -1,12 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
-
-const backgroundImage = 'https://trust-notary.com/_assets/media/3813b32831794102f24059f09e0a6962.jpg';
-const professionalServiceImage = 'https://trust-notary.com/_assets/media/a0cbf6662ccef407221ab03afbc5fb03.jpg';
-const realEstateClosingsImage = 'https://trust-notary.com/_assets/media/04a747008ac9ed0b219ae53a84d6eec9.jpg';
-const mobileServicesImage = 'https://trust-notary.com/_assets/media/00790bfe9288b5780c9d6c7a7fcca94f.jpg';
-const trustedPartnerImage = 'https://trust-notary.com/_assets/media/3813b32831794102f24059f09e0a6962.jpg';
+import backgroundImage from '../assets/schedule-bg.jpg';
+import professionalServiceImage from '../assets/showcase-bg.jpg';
+import realEstateClosingsImage from '../assets/real-estate.jpg';
+import mobileServicesImage from '../assets/mobile-services.jpg';
+import trustedPartnerImage from '../assets/schedule-bg.jpg';
 
 const services = [
   {
