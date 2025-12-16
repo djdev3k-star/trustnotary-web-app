@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 import backgroundImage from '../assets/mobile-services.jpg';
+import googleIcon from '../assets/google_g_icon_download.png';
 
 const testimonials = [
   {
@@ -46,7 +47,7 @@ const TestimonialsSection = () => {
           </h2>
           <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
             <img
-              src="/src/assets/google_g_icon_download.png"
+              src={googleIcon}
               alt="Google"
               className="w-6 h-6 sm:w-8 sm:h-8"
             />
@@ -71,7 +72,7 @@ const TestimonialsSection = () => {
               {/* Rating */}
               <div className="flex items-center space-x-2 mb-4 sm:mb-6">
                 <img
-                  src="/src/assets/google_g_icon_download.png"
+                  src={googleIcon}
                   alt="Google"
                   className="w-4 h-4 sm:w-5 sm:h-5"
                 />
