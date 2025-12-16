@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, Menu, X } from 'lucide-react';
+import trustNotaryLogo from '../assets/trust_notary_logo.svg';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,7 +57,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2 sm:space-x-4">
             <img
-              src="/src/assets/trust_notary_logo.svg"
+              src={trustNotaryLogo}
               alt="Trust Notary Logo"
               className="h-12 sm:h-16 lg:h-20 w-auto"
             />
