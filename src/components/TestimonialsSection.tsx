@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
+import backgroundImage from '../assets/mobile-services.jpg';
 
 const testimonials = [
   {
@@ -22,8 +23,6 @@ const testimonials = [
     rating: 5
   }
 ];
-
-const backgroundImage = 'https://trust-notary.com/_assets/media/00790bfe9288b5780c9d6c7a7fcca94f.jpg';
 
 const TestimonialsSection = () => {
   return (

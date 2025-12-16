@@ -1,8 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FileText, Home, Building, CreditCard, Plus } from 'lucide-react';
-
-const backgroundImage = 'https://trust-notary.com/_assets/media/0ee4b0c9015ee3a8870ba13160f8ca61.jpg';
+import backgroundImage from '../assets/services-bg.jpg';
 
 const services = [
   {

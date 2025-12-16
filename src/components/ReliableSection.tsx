@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import reliableBg from '../assets/reliable-bg.jpg';
 
 const ReliableSection = () => {
   return (
     <section className="py-32 bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
-          backgroundImage: `url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1600')`
+          backgroundImage: `url(${reliableBg})`
         }}
       />
       
@@ -28,7 +29,7 @@ const ReliableSection = () => {
             Reliable Signings Every Time
           </motion.h2>
 
-          <motion.p
+          {/*<motion.p
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -36,7 +37,7 @@ const ReliableSection = () => {
           >
             Our reputation is built on showing up ready, getting it 
             right the first time.
-          </motion.p>
+          </motion.p>*/}
 
           <motion.button
             initial={{ opacity: 0, y: 30 }}

@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
-const backgroundImage = 'https://trust-notary.com/_assets/media/04635ee3f7d37abf84d4fb40b9f6f952.jpg';
+import backgroundImage from '../assets/hero-poster.jpg';
 
 const AboutSection = () => {
   return (

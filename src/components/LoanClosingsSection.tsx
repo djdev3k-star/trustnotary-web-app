@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import loanClosingsImage from '../assets/loan-closings.jpg';
 
 const LoanClosingsSection = () => {
   return (
@@ -54,7 +55,7 @@ const LoanClosingsSection = () => {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/4427430/pexels-photo-4427430.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={loanClosingsImage}
                 alt="Professional document review"
                 className="w-full h-96 object-cover"
               />
