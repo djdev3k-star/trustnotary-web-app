@@ -52,11 +52,10 @@ const ScheduleSection = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 sm:mb-8"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 sm:mb-8 tracking-tight"
               style={{ fontFamily: 'Cormorant Garamond, serif' }}
             >
-              We handle every signing with care, accuracy, and total
-              professionalism. Your documents are in good hands.
+              We handle every signing with care, accuracy, and total professionalism. Your documents are in good hands.
             </motion.h2>
           </div>
 
@@ -99,13 +98,17 @@ const ScheduleSection = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-center"
           >
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-[#cdad7d] hover:bg-[#b89d6d] text-white px-8 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 rounded-lg text-base sm:text-lg lg:text-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+            <button
+              className="group relative bg-[#142631] border border-[#cdad7d] text-white px-8 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 font-semibold text-base sm:text-lg tracking-widest uppercase overflow-hidden transition-all duration-300 hover:border-[#cdad7d]/80"
+              style={{ fontFamily: 'Cormorant Garamond, serif' }}
             >
-              BOOK APPOINTMENT
-            </motion.button>
+              <span className="absolute inset-0 bg-gradient-to-r from-[#cdad7d]/0 via-[#cdad7d]/10 to-[#cdad7d]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <span className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#cdad7d]/50 to-transparent" />
+                <span className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#cdad7d]/50 to-transparent" />
+              </span>
+              <span className="relative z-10">BOOK APPOINTMENT</span>
+            </button>
           </motion.div>
         </motion.div>
       </div>

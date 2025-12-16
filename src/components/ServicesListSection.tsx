@@ -9,7 +9,7 @@ const ServicesListSection = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center uppercase tracking-wider px-4"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center uppercase tracking-widest px-4"
           style={{ fontFamily: 'Cormorant Garamond, serif' }}
         >
           Find the Right Notary Solution

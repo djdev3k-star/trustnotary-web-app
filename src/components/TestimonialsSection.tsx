@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
-import backgroundImage from '../assets/mobile-services.jpg';
 import googleIcon from '../assets/google_g_icon_download.png';
+import backgroundImage from '../assets/mobile-services.jpg';
 
 const testimonials = [
   {
@@ -42,7 +42,7 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-10 sm:mb-12 lg:mb-16"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 sm:mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 sm:mb-6 tracking-tight" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
             Feedback from Clients
           </h2>
           <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
@@ -69,7 +69,6 @@ const TestimonialsSection = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="bg-[#cdad7d]/5 backdrop-blur-sm border-2 border-[#cdad7d]/20 rounded-2xl p-5 sm:p-6 lg:p-8 hover:bg-[#cdad7d]/10 hover:border-[#cdad7d]/40 transition-all duration-300"
             >
-              {/* Rating */}
               <div className="flex items-center space-x-2 mb-4 sm:mb-6">
                 <img
                   src={googleIcon}

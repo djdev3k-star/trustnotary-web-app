@@ -100,17 +100,15 @@ const Navbar = () => {
               ))}
             </div>
 
-            <motion.a
+            <a
               href="tel:2146854750"
-              className="hidden md:flex items-center space-x-2 bg-[#cdad7d]/10 hover:bg-[#cdad7d]/20 px-4 py-2 rounded-lg transition-all"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              className="hidden md:flex items-center space-x-2 px-4 py-2 transition-all"
             >
               <Phone className="w-5 h-5 text-[#cdad7d]" />
               <span className="text-lg font-semibold text-white" style={{ fontFamily: 'EB Garamond, serif' }}>
                 (214) 685-4750
               </span>
-            </motion.a>
+            </a>
 
             <motion.button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
