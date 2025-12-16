@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Star, Shield } from 'lucide-react';
 import googleIcon from '../assets/google_g_icon_download.png';
-
-const heroVideo = 'https://trust-notary.com/_assets/video/10a39bf285bb22e99497f536dcf905a3.mp4';
-const heroPosterImage = 'https://trust-notary.com/_assets/media/04635ee3f7d37abf84d4fb40b9f6f952.jpg';
+import heroVideo from '../assets/hero-video.mp4';
+import heroPosterImage from '../assets/hero-poster.jpg';
 
 const Hero = () => {
   const { scrollY } = useScroll();
