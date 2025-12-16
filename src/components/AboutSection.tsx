@@ -4,17 +4,17 @@ import backgroundImage from '../assets/hero-poster.jpg';
 
 const AboutSection = () => {
   return (
-    <section id="about" className="relative py-24 sm:py-36 lg:py-48 overflow-hidden min-h-[60vh] sm:min-h-[70vh]">
+    <section id="about" className="relative py-28 sm:py-40 lg:py-52 overflow-hidden min-h-[65vh] sm:min-h-[75vh]">
       <div
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url(${backgroundImage})`,
-          backgroundPosition: 'center 30%'
+          backgroundPosition: 'center 20%'
         }}
       />
       <div className="absolute inset-0 bg-[#142631]/60" />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center flex items-center justify-center min-h-[60vh] sm:min-h-[70vh]">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center flex items-center justify-center min-h-[65vh] sm:min-h-[75vh]">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
