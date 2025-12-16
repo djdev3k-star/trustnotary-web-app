@@ -79,7 +79,7 @@ const ContactSection = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-3 sm:mb-4"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-3 sm:mb-4 tracking-tight"
               style={{ fontFamily: 'Cormorant Garamond, serif' }}
             >
               Get In Touch
@@ -88,7 +88,7 @@ const ContactSection = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8"
+              className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 font-light leading-relaxed"
               style={{ fontFamily: 'Cormorant Garamond, serif' }}
             >
               Ready to schedule your notary appointment? Contact us today.
@@ -161,11 +161,12 @@ const ContactSection = () => {
 
               <button
                 type="submit"
-                className="w-full bg-[#142631] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#1a3340] transition-all transform hover:scale-[1.02] shadow-lg flex items-center justify-center space-x-2"
+                className="group relative w-full bg-[#142631] border border-[#cdad7d] text-white px-8 py-4 font-bold text-lg tracking-wide uppercase overflow-hidden transition-all duration-300 hover:border-[#cdad7d]/80 flex items-center justify-center space-x-2"
                 style={{ fontFamily: 'Cormorant Garamond, serif' }}
               >
-                <span>Send Message</span>
-                <Send className="w-5 h-5" />
+                <span className="absolute inset-0 bg-gradient-to-r from-[#cdad7d]/0 via-[#cdad7d]/10 to-[#cdad7d]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <span className="relative z-10">Send Message</span>
+                <Send className="w-5 h-5 relative z-10" />
               </button>
             </form>
           </motion.div>

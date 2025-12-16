@@ -63,10 +63,10 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-10 sm:mb-12 lg:mb-16"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#142631] mb-4 sm:mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#142631] mb-4 sm:mb-6 tracking-tight" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
             Professional Services & Transparent Pricing
           </h2>
-          <p className="text-base sm:text-lg lg:text-xl text-[#142631]/80 max-w-3xl mx-auto leading-relaxed" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+          <p className="text-base sm:text-lg lg:text-xl text-[#142631]/80 max-w-3xl mx-auto leading-relaxed font-light" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
             From residential closings to commercial transactions, we provide expert notary services with upfront pricing. No surprises, no hidden fees.
           </p>
         </motion.div>
@@ -112,15 +112,13 @@ const Services = () => {
                 ))}
               </div>
 
-              {/* CTA Button */}
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full mt-4 sm:mt-6 bg-[#142631] hover:bg-[#1a3340] text-white py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 text-sm sm:text-base"
+              <button
+                className="group relative w-full mt-4 sm:mt-6 bg-[#142631] border border-[#cdad7d] text-white py-2.5 sm:py-3 font-semibold text-sm sm:text-base tracking-wide uppercase overflow-hidden transition-all duration-300 hover:border-[#cdad7d]/80"
                 style={{ fontFamily: 'Cormorant Garamond, serif' }}
               >
-                Book This Service
-              </motion.button>
+                <span className="absolute inset-0 bg-gradient-to-r from-[#cdad7d]/0 via-[#cdad7d]/10 to-[#cdad7d]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <span className="relative z-10">Book This Service</span>
+              </button>
             </motion.div>
           ))}
         </div>

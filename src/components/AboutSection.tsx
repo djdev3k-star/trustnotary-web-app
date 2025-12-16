@@ -25,7 +25,7 @@ const AboutSection = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight drop-shadow-lg"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight drop-shadow-lg tracking-tight"
             style={{ fontFamily: 'Cormorant Garamond, serif' }}
           >
             At Trust Notary, we don't just show up—we represent your business like it's our own.

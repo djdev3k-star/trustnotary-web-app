@@ -42,7 +42,7 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-10 sm:mb-12 lg:mb-16"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 sm:mb-6" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 sm:mb-6 tracking-tight" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
             Feedback from Clients
           </h2>
           <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
