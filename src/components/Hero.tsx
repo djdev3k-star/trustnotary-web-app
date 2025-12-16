@@ -73,6 +73,30 @@ const Hero = () => {
               </motion.p>
             </div>
 
+            {/* Mobile Badges - Shown only on mobile */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="flex lg:hidden flex-wrap gap-3"
+            >
+              <div className="flex items-center space-x-2 px-3 py-2 bg-white/5 backdrop-blur-sm rounded-lg">
+                <img src={googleIcon} alt="Google" className="w-4 h-4" />
+                <div className="flex flex-col">
+                  <span className="text-xs text-white font-bold drop-shadow-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>5-Stars on Google</span>
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-2.5 h-2.5 text-[#cdad7d] fill-current" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center space-x-2 px-3 py-2 bg-white/5 backdrop-blur-sm rounded-lg">
+                <Shield className="w-4 h-4 text-[#cdad7d]" />
+                <span className="text-xs text-white font-bold drop-shadow-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Trusted & Insured</span>
+              </div>
+            </motion.div>
+
             <motion.button
               className="relative bg-black border-2 border-[#cdad7d] text-white px-8 md:px-12 py-4 md:py-5 rounded-lg font-bold text-lg md:text-xl shadow-2xl uppercase tracking-wider overflow-hidden group"
               style={{ fontFamily: 'Cormorant Garamond, serif' }}
