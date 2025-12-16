@@ -31,6 +31,7 @@ const VisualShowcase = () => {
         }}
       />
       <div className="absolute inset-0 bg-[#cdad7d]/50" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#cdad7d]/20 via-[#cdad7d]/40 to-[#cdad7d]/30" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 lg:py-32">
         <motion.div

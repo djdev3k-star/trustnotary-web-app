@@ -12,6 +12,7 @@ const AboutSection = () => {
           backgroundPosition: 'center 30%'
         }}
       />
+      <div className="absolute inset-0 bg-[#142631]/60" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center flex items-center justify-center min-h-[50vh] sm:min-h-[60vh]">
         <motion.div

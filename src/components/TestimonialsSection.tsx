@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
+import googleIcon from '../assets/google_g_icon_download.png';
 import backgroundImage from '../assets/mobile-services.jpg';
 
 const testimonials = [
@@ -46,7 +47,7 @@ const TestimonialsSection = () => {
           </h2>
           <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
             <img
-              src="/src/assets/google_g_icon_download.png"
+              src={googleIcon}
               alt="Google"
               className="w-6 h-6 sm:w-8 sm:h-8"
             />
@@ -68,10 +69,9 @@ const TestimonialsSection = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="bg-[#cdad7d]/5 backdrop-blur-sm border-2 border-[#cdad7d]/20 rounded-2xl p-5 sm:p-6 lg:p-8 hover:bg-[#cdad7d]/10 hover:border-[#cdad7d]/40 transition-all duration-300"
             >
-              {/* Rating */}
               <div className="flex items-center space-x-2 mb-4 sm:mb-6">
                 <img
-                  src="/src/assets/google_g_icon_download.png"
+                  src={googleIcon}
                   alt="Google"
                   className="w-4 h-4 sm:w-5 sm:h-5"
                 />
