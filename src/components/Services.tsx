@@ -112,13 +112,16 @@ const Services = () => {
                 ))}
               </div>
 
-              <button
-                className="group relative w-full mt-4 sm:mt-6 bg-[#142631] border border-[#cdad7d] text-white py-2.5 sm:py-3 font-semibold text-sm sm:text-base tracking-wide uppercase overflow-hidden transition-all duration-300 hover:border-[#cdad7d]/80"
+              <a
+                href="https://trustnotary.setmore.com/book"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative w-full mt-4 sm:mt-6 bg-[#142631] border border-[#cdad7d] text-white py-2.5 sm:py-3 font-semibold text-sm sm:text-base tracking-wide uppercase overflow-hidden transition-all duration-300 hover:border-[#cdad7d]/80 inline-block text-center"
                 style={{ fontFamily: 'Cormorant Garamond, serif' }}
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-[#cdad7d]/0 via-[#cdad7d]/10 to-[#cdad7d]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <span className="relative z-10">Book This Service</span>
-              </button>
+              </a>
             </motion.div>
           ))}
         </div>

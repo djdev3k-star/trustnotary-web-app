@@ -39,16 +39,19 @@ const ReliableSection = () => {
             right the first time.
           </motion.p>*/}
 
-          <motion.button
+          <motion.a
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+            href="https://trustnotary.setmore.com/book"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
           >
             BOOK APPOINTMENT
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>
