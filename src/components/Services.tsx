@@ -172,18 +172,7 @@ const Services = () => {
                     <span className="text-[#cdad7d] font-semibold text-lg whitespace-nowrap" style={{ fontFamily: 'EB Garamond, serif' }}>$10</span>
                   </div>
                 </div>
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <div className="flex justify-between items-start">
-                    <span className="text-white text-sm leading-relaxed pr-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Protest of a Bill or Note</span>
-                    <span className="text-[#cdad7d] font-semibold text-lg whitespace-nowrap" style={{ fontFamily: 'EB Garamond, serif' }}>$4</span>
-                  </div>
-                </div>
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <div className="flex justify-between items-start">
-                    <span className="text-white text-sm leading-relaxed pr-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Each Notice of Protest</span>
-                    <span className="text-[#cdad7d] font-semibold text-lg whitespace-nowrap" style={{ fontFamily: 'EB Garamond, serif' }}>$1</span>
-                  </div>
-                </div>
+
                 <div className="bg-white/5 rounded-lg p-4 border border-white/10">
                   <div className="flex justify-between items-start">
                     <span className="text-white text-sm leading-relaxed pr-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Other Notarial Acts Allowed by Law</span>
@@ -216,14 +205,7 @@ const Services = () => {
                       <td className="py-4 pr-6 text-white text-base lg:text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Certified Copy of Non-Recordable Document</td>
                       <td className="py-4 text-[#cdad7d] font-semibold text-right text-lg lg:text-xl" style={{ fontFamily: 'EB Garamond, serif' }}>$10</td>
                     </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-4 pr-6 text-white text-base lg:text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Protest of a Bill or Note</td>
-                      <td className="py-4 text-[#cdad7d] font-semibold text-right text-lg lg:text-xl" style={{ fontFamily: 'EB Garamond, serif' }}>$4</td>
-                    </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-4 pr-6 text-white text-base lg:text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Each Notice of Protest</td>
-                      <td className="py-4 text-[#cdad7d] font-semibold text-right text-lg lg:text-xl" style={{ fontFamily: 'EB Garamond, serif' }}>$1</td>
-                    </tr>
+
                     <tr>
                       <td className="py-4 pr-6 text-white text-base lg:text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Other Notarial Acts Allowed by Law</td>
                       <td className="py-4 text-[#cdad7d] font-semibold text-right text-lg lg:text-xl" style={{ fontFamily: 'EB Garamond, serif' }}>$10</td>
