@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import wandaImage from '../assets/wanda.png';
 import contactBg from '../assets/contact-bg.png';
 
+const ContactSection = () => {
   return (
     <section id="contact" className="relative overflow-hidden py-16 sm:py-24 lg:py-32">
       <div
