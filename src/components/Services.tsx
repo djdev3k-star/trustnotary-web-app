@@ -6,14 +6,14 @@ import backgroundImage from '../assets/services-bg.jpg';
 const services = [
   {
     icon: Home,
-    title: 'Refinance Documents',
+    title: 'Refinance',
     price: '$125 - $150',
     description: 'Complete refinancing document notarization with accuracy guarantee',
     features: ['Document review', 'Identity verification', 'Signature witnessing']
   },
   {
     icon: FileText,
-    title: 'Buyer/Seller Documents',
+    title: 'Buyer/Seller',
     price: '$100 - $125',
     description: 'Real estate transaction document notarization services',
     features: ['Purchase agreements', 'Closing documents', 'Title transfers']
@@ -21,23 +21,23 @@ const services = [
   {
     icon: CreditCard,
     title: 'Reverse Mortgage Application',
-    price: '$175',
+    price: '$85 - $175',
     description: 'Specialized reverse mortgage document processing',
     features: ['Application review', 'Counseling certificates', 'Legal compliance']
   },
   {
     icon: Building,
     title: 'Commercial Real Estate',
-    price: '$200+',
+    price: '$250+',
     description: 'Complex commercial property transaction support',
     features: ['Multi-party signings', 'Corporate documents', 'Investment properties']
   },
   {
     icon: FileText,
     title: 'Loan Modification',
-    price: '$575+',
+    price: '$125',
     description: 'Comprehensive loan modification document services',
-    features: ['Hardship documentation', 'Financial statements', 'Modification agreements']
+    features: []
   },
   {
     icon: Plus,
