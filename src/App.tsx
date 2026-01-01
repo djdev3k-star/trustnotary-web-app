@@ -1,28 +1,31 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import AboutSection from './components/AboutSection';
-import VisualShowcase from './components/VisualShowcase';
-import Services from './components/Services';
-import TestimonialsSection from './components/TestimonialsSection';
-import ScheduleSection from './components/ScheduleSection';
-import ContactSection from './components/ContactSection';
-import ServicesListSection from './components/ServicesListSection';
-import Footer from './components/Footer';
+
+const AboutSection = lazy(() => import('./components/AboutSection'));
+const VisualShowcase = lazy(() => import('./components/VisualShowcase'));
+const Services = lazy(() => import('./components/Services'));
+const TestimonialsSection = lazy(() => import('./components/TestimonialsSection'));
+const ScheduleSection = lazy(() => import('./components/ScheduleSection'));
+const ContactSection = lazy(() => import('./components/ContactSection'));
+const ServicesListSection = lazy(() => import('./components/ServicesListSection'));
+const Footer = lazy(() => import('./components/Footer'));
 
 function App() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
-      <AboutSection />
-      <VisualShowcase />
-      <Services />
-      <TestimonialsSection />
-      <ScheduleSection />
-      <ContactSection />
-      <ServicesListSection />
-      <Footer />
+      <Suspense fallback={<div className="h-screen" />}>
+        <AboutSection />
+        <VisualShowcase />
+        <Services />
+        <TestimonialsSection />
+        <ScheduleSection />
+        <ContactSection />
+        <ServicesListSection />
+        <Footer />
+      </Suspense>
     </div>
   );
 }

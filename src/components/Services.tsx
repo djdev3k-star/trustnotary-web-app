@@ -6,14 +6,14 @@ import backgroundImage from '../assets/services-bg.jpg';
 const services = [
   {
     icon: Home,
-    title: 'Refinance Documents',
+    title: 'Refinance',
     price: '$125 - $150',
     description: 'Complete refinancing document notarization with accuracy guarantee',
     features: ['Document review', 'Identity verification', 'Signature witnessing']
   },
   {
     icon: FileText,
-    title: 'Buyer/Seller Documents',
+    title: 'Buyer/Seller',
     price: '$100 - $125',
     description: 'Real estate transaction document notarization services',
     features: ['Purchase agreements', 'Closing documents', 'Title transfers']
@@ -21,23 +21,23 @@ const services = [
   {
     icon: CreditCard,
     title: 'Reverse Mortgage Application',
-    price: '$175',
+    price: '$85 - $175',
     description: 'Specialized reverse mortgage document processing',
     features: ['Application review', 'Counseling certificates', 'Legal compliance']
   },
   {
     icon: Building,
     title: 'Commercial Real Estate',
-    price: '$200+',
+    price: '$250+',
     description: 'Complex commercial property transaction support',
     features: ['Multi-party signings', 'Corporate documents', 'Investment properties']
   },
   {
     icon: FileText,
     title: 'Loan Modification',
-    price: '$575+',
+    price: '$125',
     description: 'Comprehensive loan modification document services',
-    features: ['Hardship documentation', 'Financial statements', 'Modification agreements']
+    features: []
   },
   {
     icon: Plus,
@@ -112,13 +112,16 @@ const Services = () => {
                 ))}
               </div>
 
-              <button
-                className="group relative w-full mt-4 sm:mt-6 bg-[#142631] border border-[#cdad7d] text-white py-2.5 sm:py-3 font-semibold text-sm sm:text-base tracking-wide uppercase overflow-hidden transition-all duration-300 hover:border-[#cdad7d]/80"
+              <a
+                href="https://trustnotary.setmore.com/book"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative w-full mt-4 sm:mt-6 bg-[#142631] border border-[#cdad7d] text-white py-2.5 sm:py-3 font-semibold text-sm sm:text-base tracking-wide uppercase overflow-hidden transition-all duration-300 hover:border-[#cdad7d]/80 inline-block text-center"
                 style={{ fontFamily: 'Cormorant Garamond, serif' }}
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-[#cdad7d]/0 via-[#cdad7d]/10 to-[#cdad7d]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <span className="relative z-10">Book This Service</span>
-              </button>
+              </a>
             </motion.div>
           ))}
         </div>
@@ -169,18 +172,7 @@ const Services = () => {
                     <span className="text-[#cdad7d] font-semibold text-lg whitespace-nowrap" style={{ fontFamily: 'EB Garamond, serif' }}>$10</span>
                   </div>
                 </div>
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <div className="flex justify-between items-start">
-                    <span className="text-white text-sm leading-relaxed pr-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Protest of a Bill or Note</span>
-                    <span className="text-[#cdad7d] font-semibold text-lg whitespace-nowrap" style={{ fontFamily: 'EB Garamond, serif' }}>$4</span>
-                  </div>
-                </div>
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <div className="flex justify-between items-start">
-                    <span className="text-white text-sm leading-relaxed pr-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Each Notice of Protest</span>
-                    <span className="text-[#cdad7d] font-semibold text-lg whitespace-nowrap" style={{ fontFamily: 'EB Garamond, serif' }}>$1</span>
-                  </div>
-                </div>
+
                 <div className="bg-white/5 rounded-lg p-4 border border-white/10">
                   <div className="flex justify-between items-start">
                     <span className="text-white text-sm leading-relaxed pr-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Other Notarial Acts Allowed by Law</span>
@@ -213,14 +205,7 @@ const Services = () => {
                       <td className="py-4 pr-6 text-white text-base lg:text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Certified Copy of Non-Recordable Document</td>
                       <td className="py-4 text-[#cdad7d] font-semibold text-right text-lg lg:text-xl" style={{ fontFamily: 'EB Garamond, serif' }}>$10</td>
                     </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-4 pr-6 text-white text-base lg:text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Protest of a Bill or Note</td>
-                      <td className="py-4 text-[#cdad7d] font-semibold text-right text-lg lg:text-xl" style={{ fontFamily: 'EB Garamond, serif' }}>$4</td>
-                    </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-4 pr-6 text-white text-base lg:text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Each Notice of Protest</td>
-                      <td className="py-4 text-[#cdad7d] font-semibold text-right text-lg lg:text-xl" style={{ fontFamily: 'EB Garamond, serif' }}>$1</td>
-                    </tr>
+
                     <tr>
                       <td className="py-4 pr-6 text-white text-base lg:text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Other Notarial Acts Allowed by Law</td>
                       <td className="py-4 text-[#cdad7d] font-semibold text-right text-lg lg:text-xl" style={{ fontFamily: 'EB Garamond, serif' }}>$10</td>

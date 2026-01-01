@@ -36,8 +36,11 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <button
-              className="group relative bg-[#142631] border border-[#cdad7d] text-white px-8 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 font-semibold text-base sm:text-lg tracking-widest uppercase overflow-hidden transition-all duration-300 hover:border-[#cdad7d]/80"
+            <a
+              href="https://trustnotary.setmore.com/book"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative bg-[#142631] border border-[#cdad7d] text-white px-8 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 font-semibold text-base sm:text-lg tracking-widest uppercase overflow-hidden transition-all duration-300 hover:border-[#cdad7d]/80 inline-block"
               style={{ fontFamily: 'Cormorant Garamond, serif' }}
             >
               <span className="absolute inset-0 bg-gradient-to-r from-[#cdad7d]/0 via-[#cdad7d]/10 to-[#cdad7d]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -46,7 +49,7 @@ const AboutSection = () => {
                 <span className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#cdad7d]/50 to-transparent" />
               </span>
               <span className="relative z-10">BOOK APPOINTMENT</span>
-            </button>
+            </a>
           </motion.div>
         </motion.div>
       </div>
