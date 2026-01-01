@@ -28,7 +28,7 @@ const ContactSection = () => {
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className="border-4 border-white shadow-2xl"
+                  className="shadow-2xl"
                 >
                   <img
                     src={wandaImage}
@@ -85,7 +85,7 @@ const ContactSection = () => {
                 style={{ fontFamily: 'Cormorant Garamond, serif' }}
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-[#cdad7d]/0 via-[#cdad7d]/10 to-[#cdad7d]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <span className="relative z-10">Book Appointment</span>
+                <span className="relative z-10">Schedule Now</span>
               </motion.a>
             </motion.div>
           </div>
