@@ -9,42 +9,48 @@ const services = [
     title: 'Refinance',
     price: '$125 - $150',
     description: 'Complete refinancing document notarization with accuracy guarantee',
-    features: ['Document review', 'Identity verification', 'Signature witnessing']
+    features: ['Document review', 'Identity verification', 'Signature witnessing'],
+    bookingUrl: 'https://trustnotary.setmore.com/book?step=time-slot&products=9eeefcc9-aa7d-4e68-a49f-71f1c856da2a&type=service&staff=02c0c0c3-e99d-4cb0-b924-9ce54b2aaf60&staffSelected=true'
   },
   {
     icon: FileText,
     title: 'Buyer/Seller',
     price: '$100 - $125',
     description: 'Real estate transaction document notarization services',
-    features: ['Purchase agreements', 'Closing documents', 'Title transfers']
+    features: ['Purchase agreements', 'Closing documents', 'Title transfers'],
+    bookingUrl: 'https://trustnotary.setmore.com/book?step=time-slot&products=9de54be1-af21-4717-9241-fd7893345031&type=service&staff=02c0c0c3-e99d-4cb0-b924-9ce54b2aaf60&staffSelected=true'
   },
   {
     icon: CreditCard,
     title: 'Reverse Mortgage Application',
     price: '$85 - $175',
     description: 'Specialized reverse mortgage document processing',
-    features: ['Application review', 'Counseling certificates', 'Legal compliance']
+    features: ['Application review', 'Counseling certificates', 'Legal compliance'],
+    bookingUrl: 'https://trustnotary.setmore.com/book?step=time-slot&products=44c55d34-73f6-40d9-a9db-d0856a8c89f6&type=service&staff=02c0c0c3-e99d-4cb0-b924-9ce54b2aaf60&staffSelected=true'
   },
   {
     icon: Building,
     title: 'Commercial Real Estate',
     price: '$250+',
     description: 'Complex commercial property transaction support',
-    features: ['Multi-party signings', 'Corporate documents', 'Investment properties']
+    features: ['Multi-party signings', 'Corporate documents', 'Investment properties'],
+    bookingUrl: 'https://trustnotary.setmore.com/book?step=time-slot&products=f7676762-3376-4b3c-8009-a476c8de09f7&type=service&staff=02c0c0c3-e99d-4cb0-b924-9ce54b2aaf60&staffSelected=true'
   },
   {
     icon: FileText,
     title: 'Loan Modification',
     price: '$125',
     description: 'Comprehensive loan modification document services',
-    features: []
+    features: [],
+    bookingUrl: 'https://trustnotary.setmore.com/book?step=time-slot&products=925dd8d1-bc3d-4f47-8ca7-8cdeb8a17b39&type=service&staff=02c0c0c3-e99d-4cb0-b924-9ce54b2aaf60&staffSelected=true'
   },
   {
     icon: Plus,
     title: 'Add-On Services',
     price: '$25 each',
     description: 'Additional notarization services as needed',
-    features: ['Extra signatures', 'Additional documents', 'Witness services']
+    features: ['Extra signatures', 'Additional documents', 'Witness services'],
+    bookingUrl: 'https://trustnotary.setmore.com/book'
   }
 ];
 
@@ -113,7 +119,7 @@ const Services = () => {
               </div>
 
               <a
-                href="https://trustnotary.setmore.com/book"
+                href={service.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative w-full mt-4 sm:mt-6 bg-[#142631] border border-[#cdad7d] text-white py-2.5 sm:py-3 font-semibold text-sm sm:text-base tracking-wide uppercase overflow-hidden transition-all duration-300 hover:border-[#cdad7d]/80 inline-block text-center"
