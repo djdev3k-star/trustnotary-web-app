@@ -119,7 +119,7 @@ const Services = () => {
               </div>
 
               <a
-                href={service.bookingUrl}
+                href="https://trustnotary.setmore.com/book"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative w-full mt-4 sm:mt-6 bg-[#142631] border border-[#cdad7d] text-white py-2.5 sm:py-3 font-semibold text-sm sm:text-base tracking-wide uppercase overflow-hidden transition-all duration-300 hover:border-[#cdad7d]/80 inline-block text-center"

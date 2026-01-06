@@ -52,7 +52,7 @@ const Footer = () => {
             </h3>
             <div className="flex items-center justify-center gap-4">
               <motion.a
-                href="https://facebook.com"
+                href="https://m.facebook.com/61551416402072/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, y: -3 }}
@@ -61,7 +61,7 @@ const Footer = () => {
                 <Facebook className="text-white" size={20} />
               </motion.a>
               <motion.a
-                href="https://instagram.com"
+                href="https://www.instagram.com/trust_notary/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, y: -3 }}
