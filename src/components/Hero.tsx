@@ -65,8 +65,7 @@ const Hero = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 }}
                 >
-                  <span className="text-white drop-shadow-sm">So Does </span>
-                  <span className="text-[#cdad7d]">Who You Send</span>
+                  <span className="text-white drop-shadow-sm">So Does Who You Send</span>
                 </motion.span>
               </h1>
 
