@@ -22,11 +22,6 @@ const services = [
     image: mobileServicesImage,
     title: 'Mobile Notary',
     description: 'Convenient notary services at your preferred location'
-  },
-  {
-    image: trustedPartnerImage,
-    title: 'Remote Online Notarization',
-    description: 'Secure RON services for digital convenience'
   }
 ];
 

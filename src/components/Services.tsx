@@ -6,45 +6,51 @@ import backgroundImage from '../assets/services-bg.jpg';
 const services = [
   {
     icon: Home,
-    title: 'Refinance Documents',
+    title: 'Refinance',
     price: '$125 - $150',
     description: 'Complete refinancing document notarization with accuracy guarantee',
-    features: ['Document review', 'Identity verification', 'Signature witnessing']
+    features: ['Document review', 'Identity verification', 'Signature witnessing'],
+    bookingUrl: 'https://trustnotary.setmore.com/book?step=time-slot&products=9eeefcc9-aa7d-4e68-a49f-71f1c856da2a&type=service&staff=02c0c0c3-e99d-4cb0-b924-9ce54b2aaf60&staffSelected=true'
   },
   {
     icon: FileText,
-    title: 'Buyer/Seller Documents',
+    title: 'Buyer/Seller',
     price: '$100 - $125',
     description: 'Real estate transaction document notarization services',
-    features: ['Purchase agreements', 'Closing documents', 'Title transfers']
+    features: ['Purchase agreements', 'Closing documents', 'Title transfers'],
+    bookingUrl: 'https://trustnotary.setmore.com/book?step=time-slot&products=9de54be1-af21-4717-9241-fd7893345031&type=service&staff=02c0c0c3-e99d-4cb0-b924-9ce54b2aaf60&staffSelected=true'
   },
   {
     icon: CreditCard,
     title: 'Reverse Mortgage Application',
-    price: '$175',
+    price: '$85 - $175',
     description: 'Specialized reverse mortgage document processing',
-    features: ['Application review', 'Counseling certificates', 'Legal compliance']
+    features: ['Application review', 'Counseling certificates', 'Legal compliance'],
+    bookingUrl: 'https://trustnotary.setmore.com/book?step=time-slot&products=44c55d34-73f6-40d9-a9db-d0856a8c89f6&type=service&staff=02c0c0c3-e99d-4cb0-b924-9ce54b2aaf60&staffSelected=true'
   },
   {
     icon: Building,
     title: 'Commercial Real Estate',
-    price: '$200+',
+    price: '$250+',
     description: 'Complex commercial property transaction support',
-    features: ['Multi-party signings', 'Corporate documents', 'Investment properties']
+    features: ['Multi-party signings', 'Corporate documents', 'Investment properties'],
+    bookingUrl: 'https://trustnotary.setmore.com/book?step=time-slot&products=f7676762-3376-4b3c-8009-a476c8de09f7&type=service&staff=02c0c0c3-e99d-4cb0-b924-9ce54b2aaf60&staffSelected=true'
   },
   {
     icon: FileText,
     title: 'Loan Modification',
-    price: '$575+',
+    price: '$125',
     description: 'Comprehensive loan modification document services',
-    features: ['Hardship documentation', 'Financial statements', 'Modification agreements']
+    features: [],
+    bookingUrl: 'https://trustnotary.setmore.com/book?step=time-slot&products=925dd8d1-bc3d-4f47-8ca7-8cdeb8a17b39&type=service&staff=02c0c0c3-e99d-4cb0-b924-9ce54b2aaf60&staffSelected=true'
   },
   {
     icon: Plus,
     title: 'Add-On Services',
     price: '$25 each',
     description: 'Additional notarization services as needed',
-    features: ['Extra signatures', 'Additional documents', 'Witness services']
+    features: ['Extra signatures', 'Additional documents', 'Witness services'],
+    bookingUrl: 'https://trustnotary.setmore.com/book'
   }
 ];
 
@@ -172,18 +178,7 @@ const Services = () => {
                     <span className="text-[#cdad7d] font-semibold text-lg whitespace-nowrap" style={{ fontFamily: 'EB Garamond, serif' }}>$10</span>
                   </div>
                 </div>
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <div className="flex justify-between items-start">
-                    <span className="text-white text-sm leading-relaxed pr-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Protest of a Bill or Note</span>
-                    <span className="text-[#cdad7d] font-semibold text-lg whitespace-nowrap" style={{ fontFamily: 'EB Garamond, serif' }}>$4</span>
-                  </div>
-                </div>
-                <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                  <div className="flex justify-between items-start">
-                    <span className="text-white text-sm leading-relaxed pr-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Each Notice of Protest</span>
-                    <span className="text-[#cdad7d] font-semibold text-lg whitespace-nowrap" style={{ fontFamily: 'EB Garamond, serif' }}>$1</span>
-                  </div>
-                </div>
+
                 <div className="bg-white/5 rounded-lg p-4 border border-white/10">
                   <div className="flex justify-between items-start">
                     <span className="text-white text-sm leading-relaxed pr-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Other Notarial Acts Allowed by Law</span>
@@ -216,14 +211,7 @@ const Services = () => {
                       <td className="py-4 pr-6 text-white text-base lg:text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Certified Copy of Non-Recordable Document</td>
                       <td className="py-4 text-[#cdad7d] font-semibold text-right text-lg lg:text-xl" style={{ fontFamily: 'EB Garamond, serif' }}>$10</td>
                     </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-4 pr-6 text-white text-base lg:text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Protest of a Bill or Note</td>
-                      <td className="py-4 text-[#cdad7d] font-semibold text-right text-lg lg:text-xl" style={{ fontFamily: 'EB Garamond, serif' }}>$4</td>
-                    </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-4 pr-6 text-white text-base lg:text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Each Notice of Protest</td>
-                      <td className="py-4 text-[#cdad7d] font-semibold text-right text-lg lg:text-xl" style={{ fontFamily: 'EB Garamond, serif' }}>$1</td>
-                    </tr>
+
                     <tr>
                       <td className="py-4 pr-6 text-white text-base lg:text-lg" style={{ fontFamily: 'Cormorant Garamond, serif' }}>Other Notarial Acts Allowed by Law</td>
                       <td className="py-4 text-[#cdad7d] font-semibold text-right text-lg lg:text-xl" style={{ fontFamily: 'EB Garamond, serif' }}>$10</td>
